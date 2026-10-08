@@ -22,7 +22,7 @@
 8. 真实模型结构矩阵目前只支持较小、条件性的额外预取收益，不支持“大模型普遍明显加速”的结论。
 
 **工程验证与研究结论的边界：**已有 RTL 功能/综合及指定夹具对齐证据，但没有把这些假想硬件扫描变成板级性能实测。
-2026-10-08 multi-token初验后的最近全量回归为 **599 passed, 14 warnings**。最初资料整理未重跑DSE；下列新增实验节来自后续实际运行。
+2026-10-08单token粒度实验后的最近全量回归为 **591 passed, 14 warnings**。最初资料整理未重跑DSE；下列新增粒度节来自后续实际实验。
 
 ## 2. 三类结果必须分开
 
@@ -270,19 +270,6 @@ rho0.9、90% GU1：最佳OFF宽度16，最大B/D宽度128，预取后总体最�
 safe-slack fit针对单请求且依赖事后baseline时间线，不是在线安全保证。
 
 阅读：[tile粒度完整报告](PREFETCH_TILE_SIZE.md)。
-
-### 4.14 Multi-token机会初验（2026-10-08新增）
-
-主模型、单共享Engine、三层barrier、H128/F256/E64/Top1，固定2MiB OCM。
-Batch1/4/8/16/32/64×三路由×三个带宽×两个seed，108cell，1080模拟。
-共享与预测分开：rho0.5/B8 balanced共享1.84581×，正确预测增量1.00000×；
-hot共享1.68412×，正确预测增量1.09849×、合成预测增量1.07088×。
-B64高复用重回compute-bound，增量约1.00081×。
-B-opt是已测试tile/DMA-ID顺序中的包络，不是全局最优；C/D包络包含OFF，保留负收益原始点。
-初轮384KiB大batch+宽tile暴露expert_locked admission活性问题，未修改核心；
-固定2MiB仅用于隔离复用，不能据此声称小OCM、多pack、多Engine已经支持。
-
-阅读：[multi-token机会报告](MULTI_TOKEN_OPPORTUNITY_STUDY.md)。
 
 ## 5. RTL对齐证据单列，不混入策略平均收益
 

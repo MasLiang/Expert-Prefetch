@@ -1,16 +1,17 @@
-# 单 token 发布候选验证记录（2026-10-08）
+# 1 token version 验证记录（2026-10-08）
 
-候选是源码快照，不是已上传的Git release。以下在独立导出目录运行，
-没有依赖原工作区的7.5GiB完整results或Vivado build/reports。
+新增multi-token机会实验的YAML、驱动、测试、报告与总览/索引条目已移除。
+源文件与结果归档到Git忽略的 `dist/multi-token-research-archive-20261008/`，
+可从归档或上一条提交恢复；不会进入新源码包或Git提交。
+历史BatchRoutingEvent/BatchPredictorOutput是主模型、CLI与RTL对齐的内部依赖，
+单token以batch_size=1表示，未破坏它们。此版本不承诺multi-token RTL。
 
 ## 实际执行
 
-- `python scripts/prepare_single_token_release.py`：698个白名单文件；源码77871978byte。
-- `pytest -o addopts='' -q`：599 passed，14条已有依赖弃用warning，12.34秒。
-- `make -C hardware/m10_u200 rtl-test`：退出码0，日志89条PASS。
-- 逐文件SHA256校验：测试后所有清单源文件保持不变。
-- 压缩包检查：698个源文件+RELEASE_MANIFEST.json；不含凭据、Git元数据、build、reports、
-  Vivado生成工程、日志、波形或checkpoint。
+- 清理后的工作区：`pytest -o addopts='' -q`，591 passed，14条依赖弃用warning。
+- 本轮没有修改 `src/edge_moe_sim/` 或任何RTL/Testbench/XDC。
+- 同一RTL源码此前独立快照的 `make -C hardware/m10_u200 rtl-test` 退出码0，89条PASS。
+- 白名单排除凭据、Git元数据、Vivado生成工程、日志、波形、build/reports。
 
 RTL日志有Icarus关于always_* constant select敏感列表的提示，以及仿真断言`$error`
 不可综合的提示；不是零warning结果，不将功能回归通过当作Vivado综合/PnR验收。
@@ -18,22 +19,14 @@ RTL日志有Icarus关于always_* constant select敏感列表的提示，以及�
 
 ## 产物
 
-源码目录：`dist/edge-moe-single-token-20261008/`。
-
-压缩包：`dist/edge-moe-single-token-20261008.tar.gz`，8189075byte，约7.8MiB。
-
-压缩包SHA256：
-
-```text
-62e926a273cdecb504d118646256f7430ede577aa0329d49720cffda4c009905
+```bash
+python scripts/prepare_single_token_release.py
 ```
 
-本记录在验证后添加，故不属于上述已冻结压缩包的698个文件；可随Git提交或作为release附件。
-RTL完整日志位于本机 `/tmp/edge-moe-single-token-release-rtl.log`，不作为源码提交。
+新快照为 `dist/edge-moe-single-token-20261008-clean/`，压缩包为同名tar.gz。
+逐文件摘要见快照内RELEASE_MANIFEST.json。旧快照不覆盖，但不作为当前干净版本使用。
 
 ## Git与待决策事项
 
-原工作区只读空`.git`不是有效仓库；没有初始化、commit、tag或push。
-已准备更严格的.gitignore并修复根README的本机绝对链接。
-公开/私有远端、许可证与正式tag名称尚未决定，不能宣称已完成上传。
-独立源码目录保留原有工程结构，避免移动模块/文档破坏路径依赖。
+清理提交消息为 `1 token version`，origin为git@github.com:MasLiang/Expert-Prefetch.git。
+未执行push或创建tag，许可证尚未选定。

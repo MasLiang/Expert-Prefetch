@@ -8,16 +8,15 @@ Simulator 主入口是 UnifiedSequenceSimulator；M10AlignmentSimulator 对当�
 RTL 支持真实 INT8 Router、外部 predictor、SwiGLU/Switch ReLU、单 token 多层链、
 有限 OCM、四通道 AXI、GU 就绪启动及投机 commit/cancel。
 
-保留 batch 相关源码以避免破坏回归，但 multi-token 新方向不纳入这个 release 的功能承诺。
+已移除新增multi-token实验的配置、驱动、测试、报告与索引。
+主模型依赖的历史BatchRoutingEvent/BatchPredictorOutput容器仍保留，单token用batch_size=1表示；
+不通过删除公共数据结构破坏已有单token、多层和RTL对齐入口。
 不声称200MHz时序闭合、真实DDR周期校准、整LLM实现、板上部署或任意profile周期精确对齐。
-大batch、小OCM的expert_locked活性限制见 MULTI_TOKEN_OPPORTUNITY_STUDY.md。
 
 ## 当前 Git 状态
 
-2026-10-08检查：工作目录中存在一个只读空 `.git/`，没有有效仓库元数据。
-`git rev-parse --show-toplevel`返回not a git repository；父目录也不是仓库。
-当前环境对根目录 `.git` 仅允许读取，所以本轮没有尝试删除它或初始化覆盖它。
-没有设置远端、创建commit/tag或上传任何文件。
+2026-10-08已初始化本地main分支，origin为git@github.com:MasLiang/Expert-Prefetch.git。
+当前清理提交使用消息`1 token version`。没有创建正式tag或执行push。
 
 ## 文件组织
 
@@ -51,7 +50,7 @@ results/<有限夹具目录>/     旧artifact测试的必需数据
 
 ```bash
 python scripts/prepare_single_token_release.py
-cd dist/edge-moe-single-token-20261008
+cd dist/edge-moe-single-token-20261008-clean
 python -m pip install -e '.[test]'
 pytest -o addopts='' -q
 make -C hardware/m10_u200 rtl-test
@@ -74,20 +73,16 @@ vivado -mode batch -source hardware/m10_u200/scripts/synth_ooc.tcl
 
 ## 上传前需要确定的事项
 
-1. 确认远端URL、可见性及代码/第三方材料公开权限。
+1. 已确认远端URL；仍需确认可见性及代码/第三方材料公开权限。
 2. 确认许可证；本轮不擅自分配MIT/Apache等许可。
-3. 在可写的独立源码目录初始化仓库，审查文件后commit/push。
+3. 当前工作区已有Git仓库，审查文件后commit/push，无需再次初始化。
 4. 验收完成后再创建正式tag/release；当前只准备候选快照。
 
-例如在导出的源码目录（不是当前只读空 `.git` 的工作区）操作：
+例如在当前工作区完成审查后上传：
 
 ```bash
-git init -b main
-git add .
-git diff --cached --stat
-git commit -m "Freeze single-token simulator and U200 RTL"
-# git remote add origin <确认后的远端URL>
-# git push -u origin main
+git status --short --branch
+# git push -u origin main  # 上传需要单独确认
 # 验收后再创建与推送tag
 ```
 

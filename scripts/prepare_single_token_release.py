@@ -61,7 +61,7 @@ def prepare(root: Path, output: Path) -> dict[str, Any]:
     manifest = dict(release_id=output.name, scope='single-token simulator + U200 RTL source snapshot',
         files=records, file_count=len(records), total_bytes=sum(r['bytes'] for r in records),
         git_history_included=False, validated_hardware='behavioral simulation, not board deployment',
-        experimental_batch_features='preserved for regression only; not included in single-token claims',
+        shared_schema='legacy batch containers retained as single-token main-model dependencies; no new multi-token study',
         excluded=['all Vivado generated projects/builds/reports', 'all credentials/tool-private directories',
                   'experiment outputs except explicit regression fixtures'],
         license='not selected; no new license assigned')
@@ -75,7 +75,7 @@ def prepare(root: Path, output: Path) -> dict[str, Any]:
 def main() -> None:
     """准备快照；不执行 git init/add/commit/push 或破坏性清理。"""
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=ROOT/'dist/edge-moe-single-token-20261008')
+    parser.add_argument('--output', type=Path, default=ROOT/'dist/edge-moe-single-token-20261008-clean')
     args = parser.parse_args()
     print(json.dumps(prepare(ROOT, args.output.resolve()), indent=2))
 
