@@ -1,0 +1,16 @@
+# 假设 DSP MAC/OCM 同步扩宽；不代表已综合、PnR 或板级测试。
+reference_root: results/current_model_retest_20261007
+bandwidth_reference: results/real_model_bandwidth_sweep_20261007
+switch_config: configs/experiments/switch_wide_tile_prefetch.yaml
+moe_config: configs/experiments/olmoe_mixtral_cases.yaml
+samples_per_model: 20
+ocm_bytes: 16777216
+bytes_per_cycle_per_channel: [16]
+mac_lanes: [16, 32, 48, 64, 96, 128, 192, 256, 384, 512]
+operations_per_mac: 2
+dsp_per_mac_lane: 1
+device_dsp_count: 6840
+# 60 来自小参数 OOC 报告，仅作控制资源参考，非完整模型资源验收。
+controller_dsp_reference: 60
+# 给 shell、控制/归约和物理实现留空间的研究预算假设。
+dsp_budget_fraction: 0.8

@@ -1,0 +1,22 @@
+# 真实模型结构；合成路由/预测和有效硬件速率，不做权重推理。
+base_config: configs/experiments/switch_prefetch.yaml
+catalogue: configs/models/real_moe_catalogue.yaml
+switch_models: [configs/models/switch_base_8.yaml, configs/models/switch_base_16.yaml]
+catalogue_models: [olmoe_1b_7b, mixtral_8x7b, mixtral_8x22b]
+layers: 5
+samples_per_seed: 10
+seeds: [20261005, 20261006, 20261007]
+coverage: 0.9
+candidate_multiplier: 2
+pe_counts: [1, 4]
+ops_per_cycle_per_pe: 32
+ratios: [0.75, 0.9, 1.0, 1.5, 2.0]
+ocm_expert_equivalents: 4
+current_ocm_budget_bytes: 25165824
+fine_tile_size: 128
+fine_original_depth: 2
+mapped_groups: [4, 2]
+# Mixtral只运行粗tile比例映射，容量为理论输入；避免当成U200可实现结果。
+mixtral_include_fine: false
+weight_bits: 8
+activation_bits: 8

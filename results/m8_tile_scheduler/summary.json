@@ -1,0 +1,59 @@
+{
+  "configuration_count": 324,
+  "hardware_validation": false,
+  "mean_prefetch_efficiency": {
+    "full_expert": 0.3910607828103539,
+    "ranked_tile": 0.18305275368387317,
+    "uniform_tile": 0.15599627545602485
+  },
+  "mean_ranked_speedup_vs_full_by_ocm_scale": {
+    "0.5": 1.0961885639167055,
+    "1.0": 0.9867903062720351,
+    "2.0": 0.9791959969163768
+  },
+  "mean_ranked_speedup_vs_full_expert": 1.0207249557017057,
+  "mean_ranked_speedup_vs_no_prefetch": 1.1239220663019736,
+  "mean_speedup_vs_no_prefetch_by_quality": {
+    "high": {
+      "full_expert": 1.1788188529898749,
+      "ranked_tile": 1.1451475879859858,
+      "uniform_tile": 1.1216023035391207
+    },
+    "low": {
+      "full_expert": 0.998329583302013,
+      "ranked_tile": 1.082784222270063,
+      "uniform_tile": 1.1016325520410517
+    },
+    "medium": {
+      "full_expert": 0.9984963768539545,
+      "ranked_tile": 1.1214625978930584,
+      "uniform_tile": 1.1158388336450755
+    },
+    "perfect": {
+      "full_expert": 1.3235564440103282,
+      "ranked_tile": 1.1462938570587868,
+      "uniform_tile": 1.1218121176749913
+    }
+  },
+  "plots": [
+    "fig_m8_latency_vs_ocm.png",
+    "fig_m8_latency_vs_ocm.pdf",
+    "fig_m8_efficiency_vs_quality.png",
+    "fig_m8_efficiency_vs_quality.pdf",
+    "fig_m8_ranked_vs_full_heatmap.png",
+    "fig_m8_ranked_vs_full_heatmap.pdf"
+  ],
+  "ranked_vs_full_configuration_counts": {
+    "exact_tie": 7,
+    "ranked_faster": 242,
+    "ranked_slower": 75
+  },
+  "simulation_count": 1296,
+  "simulator_scope": "single_token_single_layer_tile_scheduling",
+  "winner_memberships_including_ties": {
+    "full_expert": 78,
+    "no_prefetch": 5,
+    "ranked_tile": 192,
+    "uniform_tile": 147
+  }
+}

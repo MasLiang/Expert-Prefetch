@@ -1,0 +1,62 @@
+{
+  "schema": "edge-moe-m10.1-u200-reference-v1",
+  "platform": {
+    "board": "Xilinx Alveo U200",
+    "device_part": {"value": "xcu200-fsgd2104-2-e", "provenance": "VERIFIED_INSTALLED_DEVICE_ONLY", "note": "Vivado get_parts and OOC synthesis verify installed device support; U200 XPFM and board metadata remain unverified."},
+    "clock_mhz": {"value": null, "provenance": "PLACEHOLDER", "note": "Set only after U200 timing closure."},
+    "memory_channel_count": {"value": null, "provenance": "PLACEHOLDER", "note": "Do not infer from the installed U280 platform."},
+    "axi_data_width_bits": {"value": null, "provenance": "PLACEHOLDER"},
+    "effective_bandwidth_bytes_per_cycle": {"value": null, "provenance": "PLACEHOLDER"},
+    "usable_ocm_bytes": {"value": null, "provenance": "PLACEHOLDER"},
+    "toolchain": {"value": "Vivado/Vitis 2023.2 available", "provenance": "VERIFIED_LOCAL"},
+    "xrt": {"value": "not found on PATH", "provenance": "VERIFIED_LOCAL"}
+  },
+  "prototype": {
+    "layers": 6,
+    "default_top_k": 2,
+    "max_candidates": 16,
+    "tiles_per_expert": 16,
+    "confidence_bits": 12,
+    "ocm_slots": 128,
+    "ocm_slot_bytes": 4096,
+    "demand_reserve_slots": 16,
+    "memory_channels": 4,
+    "dma_setup_cycles": 4,
+    "dma_bytes_per_cycle": 64,
+    "gu_compute_cycles": 8,
+    "nonlinear_cycles": 2,
+    "down_compute_cycles": 8,
+    "compute_block_cycles": 12,
+    "bandwidth_block_cycles": 6
+  },
+  "numeric_rtl": {
+    "top": "tile_prefetch_predictive_axi_top",
+    "hidden_size": 16,
+    "f_tile_size": 16,
+    "weight_bits": 8,
+    "activation_bits": 8,
+    "accumulator_bits": 32,
+    "axi_beat_bits": 128,
+    "gu_bytes_per_tile": 512,
+    "down_bytes_per_tile": 256,
+    "nonlinear_format": "signed Q4 int8, 256-entry SiLU LUT",
+    "gating_format": "unsigned Q15, range 0..32768",
+    "physical_axi_masters": 1,
+    "use_real_compute": true,
+    "auto_compute": true,
+    "demand_reserve_slots": 2,
+    "provenance": "FUNCTIONAL_PROTOTYPE_NOT_MEASURED"
+  },
+  "ooc_synthesis_profile": {
+    "max_candidates": 4,
+    "tiles_per_expert": 4,
+    "descriptor_entries": 16,
+    "ocm_banks": 2,
+    "slots_per_bank": 4,
+    "slot_bytes": 512,
+    "target_period_ns": 5,
+    "target_clock_mhz": 200,
+    "provenance": "OOC_CHECK_TARGET_NOT_TIMING_SIGNOFF"
+  },
+  "claim_boundary": "prototype contains legacy timer-test defaults; numeric_rtl is the real-compute ABI. All values are test configurations, not U200 measurements."
+}

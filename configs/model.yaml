@@ -1,0 +1,12 @@
+# Synthetic demonstration model. It is intentionally small and is not a VEK280 model.
+model:
+  name: synthetic_moe
+  hidden_size: 64
+  intermediate_size: 128
+  num_experts: 8
+  top_k: 2
+  weight_bits: 8
+  activation_bits: 8
+  fuse_gate_up: true
+  router_weights_resident: true
+  moe_layer_indices: [0, 3, 7, 11]

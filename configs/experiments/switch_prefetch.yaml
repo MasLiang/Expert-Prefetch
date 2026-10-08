@@ -1,0 +1,28 @@
+# 未剪枝 Switch；只参考 FLAME 双候选覆盖率，不复现 CEPR。
+models: [configs/models/switch_base_8.yaml, configs/models/switch_base_16.yaml]
+samples: 50
+seed: 20261005
+candidate_count: 2
+coverage: 0.844
+f_tile_size: 128
+prefix_depth: 2
+predictor_latency_cycles: 20
+# 预测 ready 后立即尝试预取；只受 demand 优先、DMA 非抢占与 OCM 容量约束。
+wait_for_previous_layer_weights: false
+ocm_capacity_bytes: [8388608, 16777216, 25165824]
+ops_per_cycle: [32, 512]
+nonlinear_elements_per_cycle: 16
+hardware:
+  name: u200_like_configured_not_measured
+  clock_hz: 200000000
+  num_memory_channels: 4
+  bandwidth_bytes_per_sec_per_channel: 3200000000
+  bandwidth_efficiency: 1.0
+  dma_setup_cycles: 8
+  max_inflight_per_channel: 1
+  burst_bytes: 16384
+  supports_channel_striping: true
+  total_aie_units: 1
+  aie_efficiency: 1.0
+  aie_task_startup_cycles: 8
+  hardware_tag: CONFIGURED_PL_ABSTRACTION_NOT_FLAME_NOT_BOARD_MEASUREMENT

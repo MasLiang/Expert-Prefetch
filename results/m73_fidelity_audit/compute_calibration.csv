@@ -1,0 +1,11 @@
+analysis,component,cycle_basis,cycles,details,percentage_of_total_runtime,source,source_type
+,sequence makespan,wall cycles,27642,,100.0,UnifiedSequenceResult,DERIVED
+,Router task (each of 3 layers),wall cycles/task,191,,2.0729324940308227,ceil(4096/24)+20,DERIVED
+,Gate-Up tile task,wall cycles/task using 4 AIE units,106,,0.3834744229795239,ceil(8192/(4*24))+20,DERIVED
+,Down tile task,wall cycles/task using 4 AIE units,63,,0.22791404384632083,ceil(4096/(4*24))+20,DERIVED
+,Nonlinear tile service,wall cycles/task,1,,0.0036176832356558863,ceil(32/1024)+0,DERIVED
+,AIE useful payload,AIE unit-cycles,50049,,11.31633926633384,AIEPool metrics,DERIVED
+,AIE task startup/allocation overhead,AIE unit-cycles,15420,,3.4865422183633603,20-cycle fixed startup per task,ASSUMED
+,AIE idle capacity,AIE unit-cycles,376803,,85.1971185153028,16*makespan-allocated,DERIVED
+,true-Expert memory starvation,summed Expert wall waits,59032,,213.55907676723825,per-Expert event timing,DERIVED
+memory-bound,end-to-end bottleneck classification,representative sequence,27642,1x=27642; 2x bandwidth=16122; 2x compute=27324,100.0,2x bandwidth vs 2x compute sensitivity,DERIVED

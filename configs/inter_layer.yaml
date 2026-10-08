@@ -1,0 +1,14 @@
+# SYNTHETIC PLACEHOLDER ONLY. Not measured VEK280 performance.
+inter_layer:
+  default:
+    aie_cycles: 100
+    nonlinear_cycles: 20
+    controller_cycles: 10
+    background_dma_bytes: 0
+  overrides:
+    "3->7":
+      aie_cycles: 150
+      nonlinear_cycles: 20
+      controller_cycles: 10
+      background_dma_bytes: 0
+      name: inter_layer_compute

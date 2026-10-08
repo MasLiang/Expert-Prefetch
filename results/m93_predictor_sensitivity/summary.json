@@ -1,0 +1,169 @@
+{
+  "aggregate_beneficial_quality_threshold": {
+    "budget_proportional": 0.2,
+    "full_expert": 0.9,
+    "hardware_greedy": 0.2,
+    "ranked_tile": 0.2
+  },
+  "calibration_rows": 19440,
+  "configurations_per_calibration": 972,
+  "full_expert_unique_winner_points": [
+    "('small_edge_moe', 'vek280_theoretical_dataflow', 0.25, 2.0, 1.0)",
+    "('small_edge_moe', 'vek280_theoretical_dataflow', 0.5, 2.0, 1.0)",
+    "('small_edge_moe', 'vek280_theoretical_dataflow', 1.0, 2.0, 1.0)",
+    "('small_edge_moe', 'vek280_theoretical_dataflow', 2.0, 2.0, 1.0)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 0.25, 1.0, 1.0)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 0.25, 2.0, 1.0)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 0.5, 1.0, 1.0)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 0.5, 2.0, 1.0)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 1.0, 1.0, 1.0)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 1.0, 2.0, 1.0)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 2.0, 1.0, 1.0)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 2.0, 2.0, 1.0)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 0.25, 2.0, 0.9)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 0.5, 2.0, 0.9)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 1.0, 2.0, 0.9)",
+    "('small_edge_moe', 'v80_like_theoretical_streaming', 2.0, 2.0, 0.9)",
+    "('small_edge_moe', 'generic_fpga_streaming', 0.25, 2.0, 1.0)",
+    "('small_edge_moe', 'generic_fpga_streaming', 0.5, 2.0, 1.0)",
+    "('small_edge_moe', 'generic_fpga_streaming', 1.0, 2.0, 1.0)",
+    "('small_edge_moe', 'generic_fpga_streaming', 2.0, 2.0, 1.0)",
+    "('medium_moe', 'v80_like_theoretical_streaming', 0.5, 2.0, 1.0)",
+    "('medium_moe', 'v80_like_theoretical_streaming', 1.0, 2.0, 1.0)",
+    "('medium_moe', 'v80_like_theoretical_streaming', 2.0, 2.0, 1.0)",
+    "('large_moe', 'v80_like_theoretical_streaming', 2.0, 2.0, 1.0)"
+  ],
+  "full_expert_winner_membership": {
+    "including_ties": 500,
+    "unique": 24
+  },
+  "mean_latency_spread_among_tile_allocators_percent": 0.9550305304048384,
+  "mean_speedup_by_calibration": {
+    "budget_proportional": {
+      "overconfident_wrong": 1.0373221040024259,
+      "underconfident_correct": 1.0372194163475477,
+      "uniform": 1.0379008077094682,
+      "well_calibrated": 1.0354786091728214
+    },
+    "full_expert": {
+      "overconfident_wrong": 1.010871464583296,
+      "underconfident_correct": 1.010871464583296,
+      "uniform": 1.010871464583296,
+      "well_calibrated": 1.010871464583296
+    },
+    "hardware_greedy": {
+      "overconfident_wrong": 1.037512632026995,
+      "underconfident_correct": 1.0369500449082154,
+      "uniform": 1.037512632026995,
+      "well_calibrated": 1.0369832170342634
+    },
+    "no_prefetch": {
+      "overconfident_wrong": 1.0,
+      "underconfident_correct": 1.0,
+      "uniform": 1.0,
+      "well_calibrated": 1.0
+    },
+    "ranked_tile": {
+      "overconfident_wrong": 1.0369964165746581,
+      "underconfident_correct": 1.0363667478030445,
+      "uniform": 1.0369964165746581,
+      "well_calibrated": 1.036299790937346
+    }
+  },
+  "mean_speedup_by_quality": {
+    "budget_proportional": {
+      "0.2": 1.0023492554893179,
+      "0.3": 1.0088575030535865,
+      "0.4": 1.0110317515657965,
+      "0.5": 1.0116619781757679,
+      "0.6": 1.0312575121073477,
+      "0.7": 1.0455224307345676,
+      "0.8": 1.0564487807867602,
+      "0.9": 1.0648626749758936,
+      "1.0": 1.087315595666355
+    },
+    "full_expert": {
+      "0.2": 0.9997502972454975,
+      "0.3": 0.9997502972454975,
+      "0.4": 0.9997502972454975,
+      "0.5": 0.9997502972454975,
+      "0.6": 0.9997502972454975,
+      "0.7": 0.9997502972454975,
+      "0.8": 0.9997502972454975,
+      "0.9": 1.0175667816948857,
+      "1.0": 1.0820243188362937
+    },
+    "hardware_greedy": {
+      "0.2": 1.010777030413709,
+      "0.3": 1.016900910507953,
+      "0.4": 1.0235199308607417,
+      "0.5": 1.0246239265842136,
+      "0.6": 1.0343868707364212,
+      "0.7": 1.036750862478701,
+      "0.8": 1.0500853088176727,
+      "0.9": 1.0580231265573272,
+      "1.0": 1.0777809863516323
+    },
+    "no_prefetch": {
+      "0.2": 1.0,
+      "0.3": 1.0,
+      "0.4": 1.0,
+      "0.5": 1.0,
+      "0.6": 1.0,
+      "0.7": 1.0,
+      "0.8": 1.0,
+      "0.9": 1.0,
+      "1.0": 1.0
+    },
+    "ranked_tile": {
+      "0.2": 1.0109953291611105,
+      "0.3": 1.0124869814318278,
+      "0.4": 1.0241887016149387,
+      "0.5": 1.0248189282249103,
+      "0.6": 1.032958509666604,
+      "0.7": 1.0363677046595035,
+      "0.8": 1.0496037710866355,
+      "0.9": 1.058017665275769,
+      "1.0": 1.0772605273148124
+    }
+  },
+  "mean_speedup_stddev_across_calibrations": {
+    "budget_proportional": 0.005441354339526071,
+    "full_expert": 0.0,
+    "hardware_greedy": 0.0019697030535610785,
+    "no_prefetch": 0.0,
+    "ranked_tile": 0.002137907352812936
+  },
+  "not_claimed": [
+    "real predictor accuracy",
+    "learned predictor implementation",
+    "hardware predictor overhead"
+  ],
+  "plots": [
+    "fig01_quality_vs_latency.png",
+    "fig01_quality_vs_latency.pdf",
+    "fig02_quality_vs_speedup.png",
+    "fig02_quality_vs_speedup.pdf",
+    "fig03_calibration_robustness.png",
+    "fig03_calibration_robustness.pdf",
+    "fig04_useful_fraction_vs_quality.png",
+    "fig04_useful_fraction_vs_quality.pdf",
+    "fig05_scheduler_rank_vs_quality.png",
+    "fig05_scheduler_rank_vs_quality.pdf",
+    "fig06_quality_ocm_phase_diagram.png",
+    "fig06_quality_ocm_phase_diagram.pdf"
+  ],
+  "quality_1_vs_point_2_latency_improvement_percent": {
+    "budget_proportional": 8.454745240408307,
+    "full_expert": 8.245035620908203,
+    "hardware_greedy": 6.640473737809735,
+    "ranked_tile": 6.56618245731711
+  },
+  "quality_rows": 4860,
+  "robustness_rows": 4860,
+  "supported_claims": [
+    "predictor quality sensitivity",
+    "confidence calibration effects",
+    "scheduler robustness"
+  ]
+}

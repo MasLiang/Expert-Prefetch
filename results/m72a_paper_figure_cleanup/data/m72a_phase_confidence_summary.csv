@@ -1,0 +1,9 @@
+metric,value
+total_configurations,240
+exact_latency_ties,125
+tie_fraction,0.5208333333333334
+unique_latency_winners,115
+robust_winners_ge_1pct,46
+robust_winner_fraction,0.19166666666666668
+all_feasible_policies_within_1pct,145
+all_feasible_policies_within_5pct,183

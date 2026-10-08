@@ -1,0 +1,110 @@
+[
+  {
+    "figure_id": "fig01a_policy_phase_quality_vs_opportunity_confidence",
+    "source_csv": "results/m72a_paper_figure_cleanup/data/fig01a_policy_phase_quality_vs_opportunity_confidence.csv",
+    "filters": "unconstrained representative slice; actual grid points only; no interpolation",
+    "x": "opportunity",
+    "y": "predictor_quality_scalar",
+    "grouping": "preferred_policy_under_tie",
+    "confidence_tie_semantics": "fill/triangle/hollow-square distinguish robust/near/exact tie",
+    "output_png": "results/m72a_paper_figure_cleanup/paper_review_figures/fig01a_policy_phase_quality_vs_opportunity_confidence.png",
+    "output_pdf": "results/m72a_paper_figure_cleanup/paper_review_figures/fig01a_policy_phase_quality_vs_opportunity_confidence.pdf",
+    "plotting_csv": "results/m72a_paper_figure_cleanup/paper_review_figures/data/fig01a_policy_phase_quality_vs_opportunity_confidence.csv"
+  },
+  {
+    "figure_id": "fig03a_policy_phase_lead_vs_channels",
+    "source_csv": "results/m72a_paper_figure_cleanup/data/fig03a_policy_phase_lead_vs_channels.csv",
+    "filters": "unconstrained representative slice; actual grid points only; no interpolation",
+    "x": "reference_bandwidth_opportunity_expert_equivalents",
+    "y": "channels",
+    "grouping": "preferred_policy_under_tie",
+    "confidence_tie_semantics": "fill/triangle/hollow-square distinguish robust/near/exact tie",
+    "output_png": "results/m72a_paper_figure_cleanup/paper_review_figures/fig03a_policy_phase_lead_vs_channels.png",
+    "output_pdf": "results/m72a_paper_figure_cleanup/paper_review_figures/fig03a_policy_phase_lead_vs_channels.pdf",
+    "plotting_csv": "results/m72a_paper_figure_cleanup/paper_review_figures/data/fig03a_policy_phase_lead_vs_channels.csv"
+  },
+  {
+    "figure_id": "fig04a_best_breadth_map",
+    "source_csv": "results/m72a_paper_figure_cleanup/data/fig04a_best_breadth_map.csv",
+    "filters": "search_rank == 1; BDS is final cost-preferred policy; one row/configuration",
+    "x": "configuration_opportunity_expert_equivalents",
+    "y": "predictor_quality_scalar",
+    "grouping": "candidate_count",
+    "confidence_tie_semantics": "canonical best BDS plan only",
+    "output_png": "results/m72a_paper_figure_cleanup/paper_review_figures/fig04a_best_breadth_map.png",
+    "output_pdf": "results/m72a_paper_figure_cleanup/paper_review_figures/fig04a_best_breadth_map.pdf",
+    "plotting_csv": "results/m72a_paper_figure_cleanup/paper_review_figures/data/fig04a_best_breadth_map.csv"
+  },
+  {
+    "figure_id": "fig04b_best_depth_map",
+    "source_csv": "results/m72a_paper_figure_cleanup/data/fig04b_best_depth_map.csv",
+    "filters": "search_rank == 1; BDS is final cost-preferred policy; one row/configuration",
+    "x": "configuration_opportunity_expert_equivalents",
+    "y": "predictor_quality_scalar",
+    "grouping": "mean_depth",
+    "confidence_tie_semantics": "canonical best BDS plan only",
+    "output_png": "results/m72a_paper_figure_cleanup/paper_review_figures/fig04b_best_depth_map.png",
+    "output_pdf": "results/m72a_paper_figure_cleanup/paper_review_figures/fig04b_best_depth_map.pdf",
+    "plotting_csv": "results/m72a_paper_figure_cleanup/paper_review_figures/data/fig04b_best_depth_map.csv"
+  },
+  {
+    "figure_id": "fig09a_static_policy_feasibility",
+    "source_csv": "results/m72a_paper_figure_cleanup/data/m72a_static_policy_regret_summary.csv",
+    "filters": "unconstrained main grid",
+    "x": "heuristic",
+    "y": "feasible_fraction",
+    "grouping": "static heuristic",
+    "confidence_tie_semantics": "infeasibility is not zero regret",
+    "output_png": "results/m72a_paper_figure_cleanup/paper_review_figures/fig09a_static_policy_feasibility.png",
+    "output_pdf": "results/m72a_paper_figure_cleanup/paper_review_figures/fig09a_static_policy_feasibility.pdf",
+    "plotting_csv": "results/m72a_paper_figure_cleanup/paper_review_figures/data/fig09a_static_policy_feasibility.csv"
+  },
+  {
+    "figure_id": "fig09b_static_policy_regret_cdf",
+    "source_csv": "results/m72a_paper_figure_cleanup/data/fig09b_static_policy_regret_cdf.csv",
+    "filters": "feasible configurations only",
+    "x": "regret_percent",
+    "y": "empirical_cdf",
+    "grouping": "static heuristic",
+    "confidence_tie_semantics": "infeasible configurations excluded, feasibility shown in legend/Fig. 9A",
+    "output_png": "results/m72a_paper_figure_cleanup/paper_review_figures/fig09b_static_policy_regret_cdf.png",
+    "output_pdf": "results/m72a_paper_figure_cleanup/paper_review_figures/fig09b_static_policy_regret_cdf.pdf",
+    "plotting_csv": "results/m72a_paper_figure_cleanup/paper_review_figures/data/fig09b_static_policy_regret_cdf.csv"
+  },
+  {
+    "figure_id": "fig10a_vek280_theoretical_policy_comparison",
+    "source_csv": "results/m72a_paper_figure_cleanup/data/fig10a_vek280_theoretical_policy_comparison.csv",
+    "filters": "3 qualities \u00d7 5 canonical policies; one best BDS/quality",
+    "x": "predictor_quality",
+    "y": "speedup_vs_no_prediction",
+    "grouping": "canonical_policy",
+    "confidence_tie_semantics": "infeasible cells explicitly marked",
+    "output_png": "results/m72a_paper_figure_cleanup/paper_review_figures/fig10a_vek280_theoretical_policy_comparison.png",
+    "output_pdf": "results/m72a_paper_figure_cleanup/paper_review_figures/fig10a_vek280_theoretical_policy_comparison.pdf",
+    "plotting_csv": "results/m72a_paper_figure_cleanup/paper_review_figures/data/fig10a_vek280_theoretical_policy_comparison.csv"
+  },
+  {
+    "figure_id": "fig11_search_vs_best_fixed_gain",
+    "source_csv": "results/m72a_paper_figure_cleanup/data/fig11_search_vs_best_fixed_gain.csv",
+    "filters": "209 mutually feasible comparisons",
+    "x": "search_improvement_percent",
+    "y": "configuration_count",
+    "grouping": "BDS vs best fixed",
+    "confidence_tie_semantics": "zero is same latency",
+    "output_png": "results/m72a_paper_figure_cleanup/paper_review_figures/fig11_search_vs_best_fixed_gain.png",
+    "output_pdf": "results/m72a_paper_figure_cleanup/paper_review_figures/fig11_search_vs_best_fixed_gain.pdf",
+    "plotting_csv": "results/m72a_paper_figure_cleanup/paper_review_figures/data/fig11_search_vs_best_fixed_gain.csv"
+  },
+  {
+    "figure_id": "fig12_search_tie_resource_efficiency",
+    "source_csv": "results/m72a_paper_figure_cleanup/data/fig12_search_tie_resource_efficiency.csv",
+    "filters": "BDS makespan == best fixed predictive makespan; 155 cells",
+    "x": "allocation_saving_bytes",
+    "y": "empirical_cdf_and_fraction",
+    "grouping": "resource metric",
+    "confidence_tie_semantics": "exact same-latency comparisons only",
+    "output_png": "results/m72a_paper_figure_cleanup/paper_review_figures/fig12_search_tie_resource_efficiency.png",
+    "output_pdf": "results/m72a_paper_figure_cleanup/paper_review_figures/fig12_search_tie_resource_efficiency.pdf",
+    "plotting_csv": "results/m72a_paper_figure_cleanup/paper_review_figures/data/fig12_search_tie_resource_efficiency.csv"
+  }
+]

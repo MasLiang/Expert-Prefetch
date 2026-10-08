@@ -1,0 +1,4 @@
+batch_size,hardware_mode,memory_channels,ocm_bytes,opportunity_expert_equivalents,predictor_latency_cycles,predictor_trace_id,realized_lead_cycles,source_milestone,synthetic_lead_time,top_k,workload_trace_id
+1,controlled_synthetic_hardware,2,49152,1.0661458333333333,7167,"rank-controlled:seed=17:ranks=(1, 2, 3, 4)|rank-controlled:seed=17:ranks=(1, 2, 3, 4)",2047.0,source_router_done,False,4,m72-controlled-3layer-k4-b1-high_reuse
+1,controlled_synthetic_hardware,2,49152,2.316145833333333,4767,"rank-controlled:seed=17:ranks=(1, 2, 3, 4)|rank-controlled:seed=17:ranks=(1, 2, 3, 4)",4447.0,source_router_done,False,4,m72-controlled-3layer-k4-b1-high_reuse
+1,controlled_synthetic_hardware,2,49152,3.3161458333333336,2847,"rank-controlled:seed=17:ranks=(1, 2, 3, 4)|rank-controlled:seed=17:ranks=(1, 2, 3, 4)",6367.0,source_router_done,False,4,m72-controlled-3layer-k4-b1-high_reuse

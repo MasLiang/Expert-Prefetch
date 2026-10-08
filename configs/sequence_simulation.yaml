@@ -1,0 +1,3 @@
+# Synthetic sequence experiment mode; not measured VEK280 behavior.
+simulation:
+  granularity: tile

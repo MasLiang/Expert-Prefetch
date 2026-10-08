@@ -1,0 +1,79 @@
+# 按 RTL 控制结构声明；不是 U200 板级测量，不从总周期拟合。
+output_directory: results/m10_ingress_alignment
+strict_execution_rules: false
+fixture:
+  hidden_size: 16
+  intermediate_size: 32
+  num_experts: 6
+  top_k: 2
+  weight_bits: 8
+  activation_bits: 8
+  f_tile_size: 16
+  slot_bytes: 512
+  future_budget_bytes: 1536
+hardware:
+  name: rtl_descriptor_structural_estimate
+  clock_hz: 200000000
+  num_memory_channels: 4
+  bandwidth_bytes_per_sec_per_channel: 3200000000
+  bandwidth_efficiency: 1.0
+  dma_setup_cycles: 0
+  max_inflight_per_channel: 1
+  burst_bytes: 256
+  supports_channel_striping: true
+  total_aie_units: 1
+  ops_per_cycle_per_aie: 32
+  aie_efficiency: 1.0
+  aie_task_startup_cycles: 8
+  hardware_tag: RTL_DESCRIPTOR_ESTIMATE_NOT_BOARD_MEASUREMENT
+execution_rules:
+  ocm_slot_bytes: 512
+  ocm_banks: 2
+  reserved_demand_slots: 2
+  epoch_base: 1
+  atomic_tile_pair: true
+  compute_policy: tile_ready_first
+  retry_future_prefetch: true
+  request_order: pair_fifo
+  descriptor_entries: 8
+  reserved_demand_descriptors: 2
+  dma_fifo_depth: 4
+  descriptor_retirement_cycles: 2
+  burst_arbitration: true
+  dma_selection_cycles: 4
+  dma_burst_gap_cycles: 1
+  dma_request_latency_cycles: 3
+  dma_request_interval_cycles: 1
+  dma_payload_cycle_multiplier: 2
+  dma_return_cycles: 2
+  router_control_cycles: 53
+  router_truth_emit_cycles: 1
+  # bench MAX_CANDIDATES=2：choice/LAUNCH/FEED(3) + launch(1)
+  # + score/tree(2) + winner(1) + offer(1) = 8，而非16候选的11。
+  prefetch_allocator_cycles: 8
+  block_prefetch_during_layer_retirement: true
+  demand_dispatch_cycles: 5
+  route_scan_cycles_per_entry: 1
+  # route_last -> drain -> 扫描token -> core promotion -> OCM metadata可见。
+  route_resolver_drain_cycles: 4
+  route_commit_visibility_cycles: 3
+  committed_launch_cycles: 1
+  truth_scheduler_refresh_cycles: 2
+  expert_combine_cycles: 2
+  # DMA完成后OCM写入/ready注册可见；不改变DDR服务带宽。
+  ocm_payload_visibility_cycles: 1
+  tile_dispatch_cycles: 4
+  nonlinear_handoff_cycles: 1
+  layer_combine_cycles: 4
+  layer_retirement_cycles: 15
+  # logical reserve -> EMIT_GU -> EMIT_DOWN -> ingress idle
+  ingress_pair_cycles: 3
+  fifo_push_blocks_dequeue: true
+  # result -> DRAIN首次探测；其后等待真实资源，而不是补偿总周期。
+  layer_retirement_probe_cycles: 2
+  layer_retirement_wait_for_ingress: true
+cases:
+  - {name: no_prefetch_three, layers: 3, future_mode: 0, slots_per_bank: 2}
+  - {name: hit_three, layers: 3, future_mode: 1, slots_per_bank: 2}
+  - {name: wrong_three, layers: 3, future_mode: 2, slots_per_bank: 2}
+  - {name: hit_eight, layers: 8, future_mode: 1, slots_per_bank: 2}

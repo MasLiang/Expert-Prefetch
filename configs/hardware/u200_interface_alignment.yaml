@@ -1,0 +1,76 @@
+# 接口结构估计：不从观测总周期或 speedup 拟合参数；不是板级性能。
+output_directory: results/m10_interface_alignment
+strict_execution_rules: false
+fixture:
+  hidden_size: 16
+  intermediate_size: 32
+  num_experts: 6
+  top_k: 2
+  weight_bits: 8
+  activation_bits: 8
+  f_tile_size: 16
+  slot_bytes: 512
+  future_budget_bytes: 1536
+hardware:
+  name: rtl_interface_structural_estimate
+  clock_hz: 200000000
+  num_memory_channels: 4
+  bandwidth_bytes_per_sec_per_channel: 3200000000
+  bandwidth_efficiency: 1.0
+  dma_setup_cycles: 0
+  max_inflight_per_channel: 1
+  burst_bytes: 256
+  supports_channel_striping: true
+  total_aie_units: 1
+  ops_per_cycle_per_aie: 32
+  aie_efficiency: 1.0
+  aie_task_startup_cycles: 8
+  hardware_tag: RTL_INTERFACE_ESTIMATE_NOT_BOARD_MEASUREMENT
+execution_rules:
+  ocm_slot_bytes: 512
+  ocm_banks: 2
+  reserved_demand_slots: 2
+  epoch_base: 1
+  atomic_tile_pair: true
+  compute_policy: tile_ready_first
+  retry_future_prefetch: true
+  request_order: pair_fifo
+  descriptor_entries: 8
+  reserved_demand_descriptors: 2
+  dma_fifo_depth: 4
+  descriptor_retirement_cycles: 2
+  burst_arbitration: true
+  dma_selection_cycles: 4
+  dma_burst_gap_cycles: 1
+  # 原子预留后 descriptor/FIFO 发射；共享串行端口每拍一个 token。
+  dma_request_latency_cycles: 3
+  dma_request_interval_cycles: 1
+  # bench 清 rvalid 与下一 beat 生成是 if/else 两个分支：每两拍一 beat。
+  # 该参数是服务节拍近似，额外 DDR_GAPS 仍由 bandwidth_efficiency 表达。
+  dma_payload_cycle_multiplier: 2
+  # AR->首次 R、stripe join/OCM->ready 返回的接口尾部结构估计。
+  dma_return_cycles: 2
+  router_load_cycles: 0
+  router_control_cycles: 53
+  # K=2 的 truth 第二个输出比第一个晚一拍。
+  router_truth_emit_cycles: 1
+  # 完整候选后 choice/LAUNCH/FEED/selection-launch + 5级树 + winner/offer。
+  # 单候选夹具初值；不代表任意候选数、每次重新选 tile 的精确 latency。
+  prefetch_allocator_cycles: 11
+  block_prefetch_during_layer_retirement: true
+  demand_dispatch_cycles: 5
+  route_scan_cycles_per_entry: 1
+  tile_dispatch_cycles: 4
+  nonlinear_handoff_cycles: 1
+  layer_combine_cycles: 4
+  layer_retirement_cycles: 15
+cases:
+  - {name: no_prefetch_three, layers: 3, future_mode: 0, slots_per_bank: 2}
+  - {name: hit_three, layers: 3, future_mode: 1, slots_per_bank: 2}
+  - {name: wrong_three, layers: 3, future_mode: 2, slots_per_bank: 2}
+  - {name: hit_eight, layers: 8, future_mode: 1, slots_per_bank: 2}
+  - {name: hit_larger_ocm, layers: 3, future_mode: 1, slots_per_bank: 4}
+  - {name: credit_pressure, layers: 3, future_mode: 1, slots_per_bank: 4, descriptor_entries: 4, fifo_depth: 2}
+  - {name: predictor_delayed, layers: 3, future_mode: 1, slots_per_bank: 2, predictor_delay_cycles: 64}
+  - {name: predictor_late, layers: 3, future_mode: 1, slots_per_bank: 2, predictor_delay_cycles: 448}
+  - {name: ddr_gaps, layers: 3, future_mode: 1, slots_per_bank: 2, ddr_gaps: 1, bandwidth_efficiency: 0.5}

@@ -1,0 +1,37 @@
+# Generic synthetic methodology profile. These values are not VEK280 measurements.
+model:
+  name: m8_generic_single_token
+  hidden_size: 64
+  intermediate_size: 256
+  num_experts: 64
+  top_k: 2
+  weight_bits: 8
+  activation_bits: 8
+
+hardware:
+  clock_hz: 1000000000
+  base_ocm_bytes: 98304       # exactly two full Experts for this synthetic model
+  bandwidth_bytes_per_sec_per_channel: 16000000000
+  bandwidth_efficiency: 0.8
+  dma_setup_cycles: 40
+  burst_bytes: 4096
+  total_aie_units: 16
+  ops_per_cycle_per_aie: 32
+  router_ops_per_cycle_per_aie: 2  # synthetic long Router/prediction overlap window
+  aie_efficiency: 0.75
+  aie_task_startup_cycles: 20
+
+experiment:
+  candidate_count: 16
+  predictor_ready_cycle: 0
+  aie_units_per_expert: 4
+  startup_gu_tiles: 1
+  ocm_scales: [0.5, 1.0, 2.0]
+  bandwidth_scales: [0.5, 1.0, 2.0]
+  dma_channels: [1, 2, 4]
+  prediction_qualities: [perfect, high, medium, low]
+  tile_sizes:
+    small: 8
+    medium: 16
+    large: 32
+  schedulers: [no_prefetch, full_expert, uniform_tile, ranked_tile]

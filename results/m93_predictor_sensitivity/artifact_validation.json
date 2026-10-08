@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "calibration_rows": 19440,
+  "quality_rows": 4860,
+  "robustness_rows": 4860,
+  "identical_trace_determinism": true,
+  "calibration_candidate_identity": true,
+  "monotonic_ranking_quality": true,
+  "tile_and_byte_conservation": true,
+  "ocm_dma_bandwidth_constraints": true,
+  "hardware_validation": false
+}

@@ -1,0 +1,18 @@
+# 合成收益边界加密；不对应板卡实测。
+base_config: configs/experiments/prefetch_phase.yaml
+tile_groups: [2, 4, 16]
+pe_counts: [1, 4]
+ocm_expert_equivalents: [1, 4]
+compute_to_memory_ratios: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.75, 0.9, 1.0, 1.1, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 3.0, 4.0, 6.0, 8.0, 12.0, 16.0]
+seeds: [20261005, 20261006, 20261007, 20261008, 20261009]
+samples_per_seed: 5
+fixed_quality: 0.9
+fixed_depth: 1
+thresholds: [1.0, 1.01, 1.05, 1.10]
+sensitivity:
+  tile_groups: [4, 16]
+  pe_count: 1
+  ocm_expert_equivalents: 4
+  ratios: [0.5, 1.0, 1.5, 2.0, 4.0]
+  qualities: [0.5, 0.75, 0.9, 1.0]
+  depths: [1, 2, 4, 8]

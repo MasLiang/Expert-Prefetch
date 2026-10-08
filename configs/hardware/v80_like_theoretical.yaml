@@ -1,0 +1,26 @@
+# THEORETICAL architecture mapping around official V80 HBM/PL-memory maxima.
+hardware_profile:
+  name: v80_like_theoretical_streaming
+  clock_hz: 1000000000
+  num_memory_channels: 8
+  bandwidth_bytes_per_sec_per_channel: 102375000000
+  bandwidth_efficiency: 0.65
+  dma_setup_cycles: 80
+  max_inflight_per_channel: 1
+  burst_bytes: 4096
+  supports_channel_striping: true
+  total_aie_units: 64
+  ops_per_cycle_per_aie: 512
+  router_ops_per_cycle_per_aie: 16
+  aie_efficiency: 0.60
+  aie_task_startup_cycles: 30
+  ocm_bytes: 67108864
+  hardware_tag: THEORETICAL_NOT_MEASURED
+execution:
+  aie_units_per_expert: 8
+  dma_mapping: round_robin_expert
+provenance:
+  official_resource_reference: AMD DS1013/UG1617; 32 GB HBM2e at 819 GB/s and 752 Mb total PL memory
+  compute_reference: assumed abstract streaming compute groups; V80 is not an AIE device
+  usable_ocm_reference: assumed 64 MiB of the PL memory available to tile buffers
+  notes: eight DMA channels and all compute efficiency/startup values are theoretical study assumptions

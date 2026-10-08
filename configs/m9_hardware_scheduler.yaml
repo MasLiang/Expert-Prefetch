@@ -1,0 +1,41 @@
+# Generic synthetic online-scheduler study; not an FPGA or VEK280 measurement.
+model:
+  name: m9_generic_single_token
+  hidden_size: 64
+  intermediate_size: 256
+  num_experts: 64
+  top_k: 2
+  weight_bits: 8
+  activation_bits: 8
+
+hardware:
+  clock_hz: 1000000000
+  base_ocm_bytes: 98304
+  bandwidth_bytes_per_sec_per_channel: 16000000000
+  bandwidth_efficiency: 0.8
+  dma_setup_cycles: 40
+  burst_bytes: 4096
+  total_aie_units: 16
+  ops_per_cycle_per_aie: 32
+  router_ops_per_cycle_per_aie: 2
+  aie_efficiency: 0.75
+  aie_task_startup_cycles: 20
+
+experiment:
+  candidate_count: 16
+  predictor_ready_cycle: 0
+  f_tile_size: 16
+  dma_channels: 2
+  aie_units_per_expert: 4
+  startup_gu_tiles: 1
+  ocm_scales: [0.25, 0.5, 1.0, 2.0]
+  bandwidth_scales: [0.5, 1.0, 2.0]
+  prediction_qualities: [perfect, high, medium, low]
+  schedulers:
+    - no_prefetch
+    - full_expert
+    - uniform_tile
+    - ranked_tile
+    - budget_proportional
+    - hardware_greedy
+    - oracle

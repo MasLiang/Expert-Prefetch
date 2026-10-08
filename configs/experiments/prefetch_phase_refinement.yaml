@@ -1,0 +1,24 @@
+# 首轮矩阵的补充：更少tile groups和中间带宽点；不是现实模型。
+hidden_size: 128
+f_tile_size: 64
+tile_groups: [1, 2, 4]
+num_experts: 16
+top_k: 1
+layers: 5
+samples: 5
+seed: 20261005
+pe_counts: [1, 4, 16]
+ops_per_cycle_per_pe: 32
+bytes_per_cycle_per_channel: [2, 8, 32]
+channels: 4
+ocm_expert_equivalents: [1, 4]
+qualities: [0.5, 0.9, 1.0]
+prefix_depths: [1, 4, 16]
+predictor_latency_cycles: 20
+candidate_count: 2
+clock_hz: 200000000
+dma_setup_cycles: 8
+compute_startup_cycles: 8
+nonlinear_elements_per_cycle: 64
+oracle_depth: all_gu
+benefit_thresholds: [1.01, 1.05, 1.10]

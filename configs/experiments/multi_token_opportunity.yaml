@@ -1,0 +1,23 @@
+# 初步机会分析：synthetic placeholder，不代表任何板卡/真实模型。
+hidden_size: 128
+intermediate_size: 256
+num_experts: 64
+top_k: 1
+layers: 3
+batch_sizes: [1, 4, 8, 16, 32, 64]
+routing_patterns: [dispersed, balanced, hot]
+ratios: [0.5, 1.0, 2.0]
+f_tile_sizes: [16, 64]
+dma_orders: [native, hot_first]
+prefetch_depths: [1, 4]
+seeds: [20261008, 20261009]
+prediction_accuracy: 0.8
+predictor_latency_cycles: 20
+clock_hz: 200000000
+channels: 4
+ops_per_cycle: 32
+# 固定2MiB以隔离复用；384KiB在大batch下暴露expert_locked活性问题。
+ocm_bytes: 2097152
+dma_setup_cycles: 8
+compute_startup_cycles: 8
+nonlinear_elements_per_cycle: 64

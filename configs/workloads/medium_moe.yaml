@@ -1,0 +1,21 @@
+workload:
+  name: medium_moe
+  description: Medium representative MoE inference characterization workload
+  provenance: representative synthetic derived from MoE scaling
+  model:
+    hidden_size: 1024
+    intermediate_size: 4096
+    num_experts: 128
+    top_k: 2
+    weight_bits: 8
+    activation_bits: 8
+    num_moe_layers: 16
+  tile:
+    f_tile_size: 256
+  routing:
+    candidate_count: 32
+    true_ranks_by_quality:
+      perfect: [1, 2]
+      high: [1, 8]
+      medium: [6, 16]
+      low: [16, 32]

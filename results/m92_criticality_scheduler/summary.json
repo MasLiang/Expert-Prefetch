@@ -1,0 +1,88 @@
+{
+  "bandwidth_scale": 1.0,
+  "configurations": 144,
+  "criticality_vs_budget_proportional": {
+    "better_points": 10,
+    "mean_improvement_percent": -2.37433577616325,
+    "tie_points": 58,
+    "worse_points": 76
+  },
+  "criticality_vs_hardware_greedy": {
+    "better_points": 11,
+    "mean_improvement_percent": -2.1862446256268218,
+    "tie_points": 53,
+    "worse_points": 80
+  },
+  "full_expert_online_winner_membership": 38,
+  "gap_decomposition_by_quality": {
+    "high": {
+      "criticality_allocation_loss_percent_of_full_oracle": 13.80972515078198,
+      "prediction_loss_percent_of_full_oracle": 9.770883775334257
+    },
+    "low": {
+      "criticality_allocation_loss_percent_of_full_oracle": 3.1122210389894045,
+      "prediction_loss_percent_of_full_oracle": 23.263910923636168
+    },
+    "medium": {
+      "criticality_allocation_loss_percent_of_full_oracle": 5.402948300388655,
+      "prediction_loss_percent_of_full_oracle": 19.694205228742216
+    },
+    "perfect": {
+      "criticality_allocation_loss_percent_of_full_oracle": 19.677680276512262,
+      "prediction_loss_percent_of_full_oracle": 1.9737951294578342
+    }
+  },
+  "largest_criticality_benefit_vs_full_expert": {
+    "allocation_loss_cycles": 924006,
+    "criticality_allocated_tiles": 18,
+    "criticality_critical_path_efficiency_cycles_per_tile": 26563.38888888889,
+    "criticality_latency_cycles": 3345418,
+    "criticality_scheduler_efficiency_cycles_per_byte": 0.022050689248477712,
+    "criticality_speedup_vs_full_expert": 1.117495332421838,
+    "criticality_speedup_vs_no_prefetch": 1.117495332421838,
+    "criticality_transferred_bytes": 17825792,
+    "expert_bytes": 50331648,
+    "hardware": "vek280_theoretical_dataflow",
+    "improvement_vs_budget_proportional_percent": 1.2250487084125128,
+    "improvement_vs_hardware_greedy_percent": 1.2250487084125128,
+    "ocm_scale": 2.0,
+    "prediction_loss_cycles": 223251,
+    "prediction_quality": "perfect",
+    "workload": "large_moe"
+  },
+  "mean_speedup_vs_no_prefetch": {
+    "budget_proportional": 1.0475332538956685,
+    "criticality_aware": 1.0215142882565755,
+    "fixed_prediction_oracle": 1.1218627745474041,
+    "full_expert": 1.007251940689976,
+    "full_oracle": 1.2693736611456867,
+    "hardware_greedy": 1.045181803385853,
+    "no_prefetch": 1.0,
+    "ranked_tile": 1.045410133101518,
+    "uniform_tile": 1.0462988486719733
+  },
+  "not_claimed": [
+    "real FPGA performance",
+    "real predictor accuracy",
+    "RTL implementation"
+  ],
+  "oracle_candidate_simulations": 16056,
+  "plots": [
+    "fig01_oracle_gap_decomposition.png",
+    "fig01_oracle_gap_decomposition.pdf",
+    "fig02_scheduler_latency_comparison.png",
+    "fig02_scheduler_latency_comparison.pdf",
+    "fig03_latency_reduction_per_byte.png",
+    "fig03_latency_reduction_per_byte.pdf",
+    "fig04_criticality_improvement.png",
+    "fig04_criticality_improvement.pdf",
+    "fig05_expert_size_tile_benefit.png",
+    "fig05_expert_size_tile_benefit.pdf"
+  ],
+  "scheduler_rows": 1296,
+  "supported": [
+    "simulator-based relative scheduling comparison",
+    "allocation/prediction gap decomposition",
+    "hardware-friendly scheduler trends"
+  ]
+}

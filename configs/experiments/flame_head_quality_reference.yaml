@@ -1,0 +1,22 @@
+# 与flame_head_quality相同truth/candidate集合和100样本，仅Top-1分布不同。
+models: [configs/models/switch_base_8.yaml]
+common_config: configs/experiments/mac_four_cases.yaml
+base_config: configs/experiments/switch_prefetch.yaml
+samples: 100
+coverage: 0.844
+top1_coverage: 0.422
+candidate_count: 2
+candidate_multiplier: 2
+prefix_depth: 2
+ops_per_cycle_per_group: 32
+f_tile_size: 128
+burst_bytes: 4096
+mac_groups: [1]
+bytes_per_cycle_per_channel: [8, 16]
+ocm_bytes: 16777216
+seeds: [20261005]
+reference_mac_groups: 1
+reference_bytes_per_cycle_per_channel: 8
+capacity_probe_model: switch_base_8_decoder
+capacity_probe_bytes: 9437184
+primary_wait_for_previous_layer_weights: false

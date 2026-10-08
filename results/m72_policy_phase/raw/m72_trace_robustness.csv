@@ -1,0 +1,4 @@
+nominal_policy,nominal_policy_regret_percent,variant_seed,winner,winner_consistent
+BREADTH_DEPTH_SEARCH,0.0,17,BREADTH_DEPTH_SEARCH,True
+BREADTH_DEPTH_SEARCH,0.7669488459590479,23,NO_PREFETCH,False
+BREADTH_DEPTH_SEARCH,0.0,31,BREADTH_DEPTH_SEARCH,True

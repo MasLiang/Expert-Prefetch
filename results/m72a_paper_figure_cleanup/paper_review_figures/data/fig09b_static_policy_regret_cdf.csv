@@ -1,0 +1,628 @@
+comparison_id,heuristic,regret_percent
+66b9aabd5ab73fa3:unconstrained,Always Full,0.0
+c99d2092688a2086:unconstrained,Always Full,12.059690493736186
+4585b61a5abd6d97:unconstrained,Always Full,3.969162659338976
+381103462e3a3601:unconstrained,Always Full,0.0
+f7c5094376f778c9:unconstrained,Always Full,11.971260132645533
+e7ec017c0b6f5fa6:unconstrained,Always Full,5.815362248606726
+ab62cc161dd2af12:unconstrained,Always Full,0.0
+f5cb6e841caab83a:unconstrained,Always Full,12.306558585114225
+7574635528258da4:unconstrained,Always Full,0.0
+c692b0443c4d6e64:unconstrained,Always Full,0.0
+132c886b16ec7093:unconstrained,Always Full,0.0
+b6b6c1c5ad12266e:unconstrained,Always Full,2.073031570939521
+959c629c4ba4f353:unconstrained,Always Full,0.0
+eec7e82a03911a45:unconstrained,Always Full,9.434657625119769
+0fe34cec9169adad:unconstrained,Always Full,4.121822761621252
+02f36bd2e10d9cde:unconstrained,Always Full,0.0
+11f37d3818714a23:unconstrained,Always Full,6.06619001990123
+32aa10208ec49024:unconstrained,Always Full,5.815362248606726
+ed41cc7b891c8cc7:unconstrained,Always Full,0.0
+dc1b67702c662919:unconstrained,Always Full,1.8721898724846975
+94e5a9300fd2b18e:unconstrained,Always Full,0.0
+ec473bd1cb466b18:unconstrained,Always Full,0.0
+ee0151e66466fe6f:unconstrained,Always Full,0.0
+3a4ca9fbb3e2b567:unconstrained,Always Full,4.456987154534842
+e173b82ee5fdf898:unconstrained,Always Full,0.0
+49fb1f54b0fc3b13:unconstrained,Always Full,0.0
+4ef16ebb63754f7b:unconstrained,Always Full,0.0
+1b924f9c75eb4518:unconstrained,Always Full,0.0
+07bb1a78ba077223:unconstrained,Always Full,0.0
+6b68292f4f9ae6d8:unconstrained,Always Full,1.8721898724846975
+2c4d51c0160241e6:unconstrained,Always Full,2.7861620617599225
+776fe805d0cfa2db:unconstrained,Always Full,0.4702484541044827
+fb70e6e577488f2c:unconstrained,Always Full,0.9360949362423598
+8207bc05e3bafac4:unconstrained,Always Full,6.707657909446629
+e92b6dde8093f756:unconstrained,Always Full,0.0
+023b729110f8d522:unconstrained,Always Full,12.059690493736186
+2e17e9d6a6a47876:unconstrained,Always Full,3.969162659338976
+c9560f2fb9962c6b:unconstrained,Always Full,0.0
+6631fcc02dfbe039:unconstrained,Always Full,11.971260132645533
+f6ccb4edb7c2ece3:unconstrained,Always Full,5.815362248606726
+d1f189cd9e68c332:unconstrained,Always Full,0.0
+6468506195359255:unconstrained,Always Full,12.306558585114225
+3d01199f4100dc37:unconstrained,Always Full,1.2781340104144334
+8f6274bc51a269c9:unconstrained,Always Full,0.0
+dcde8eee9926029a:unconstrained,Always Full,0.0
+d461516d2c6f8f58:unconstrained,Always Full,3.7876042044219016
+c6a11d8677ae2ec4:unconstrained,Always Full,0.0
+1dc11b44c28e7bc4:unconstrained,Always Full,9.434657625119769
+2da0e65fdcf30c18:unconstrained,Always Full,4.121822761621252
+2fa6978180ff9c1f:unconstrained,Always Full,0.0
+d870eda5ddfc40fa:unconstrained,Always Full,6.06619001990123
+bf21aa47be54c9c0:unconstrained,Always Full,5.815362248606726
+d21e0a0742225bff:unconstrained,Always Full,0.0
+eb89935767c866eb:unconstrained,Always Full,1.8721898724846975
+748b7a1760398346:unconstrained,Always Full,0.36569438397910936
+4efa6e9754857d5a:unconstrained,Always Full,0.0
+42f394b39b65e5c2:unconstrained,Always Full,0.0
+d2c93127ee58efac:unconstrained,Always Full,3.656108597285068
+b8c4cb685f4b6701:unconstrained,Always Full,0.0
+21f326d503c2a4eb:unconstrained,Always Full,0.0
+dee14dca84ef3920:unconstrained,Always Full,0.0
+78f0d95ce7164398:unconstrained,Always Full,0.0
+39acb25e3cd203f0:unconstrained,Always Full,0.0
+6efb0cc85830776b:unconstrained,Always Full,1.8721898724846975
+1b0786ac221dbc56:unconstrained,Always Full,2.7861620617599225
+14bb07b5d455368d:unconstrained,Always Full,0.4702484541044827
+03fdb3b31ee2ce84:unconstrained,Always Full,0.9360949362423598
+95487db4cba45e45:unconstrained,Always Full,4.688785302988752
+af53858c5c4ee0ed:unconstrained,Always Full,0.0
+63d6759a72a7c87a:unconstrained,Always Full,12.059690493736186
+359ba8e3b39ffc8c:unconstrained,Always Full,3.969162659338976
+9850653cd5f9cadb:unconstrained,Always Full,0.0
+61f322b7103890a9:unconstrained,Always Full,11.971260132645533
+ada5265058d70411:unconstrained,Always Full,5.815362248606726
+cd31d459619733cb:unconstrained,Always Full,0.0
+80d459b45ecfe108:unconstrained,Always Full,12.306558585114225
+252d7e2200123b9d:unconstrained,Always Full,0.0
+506dda400df4ce46:unconstrained,Always Full,0.0
+ed1cac5e0d8d29cd:unconstrained,Always Full,0.9248341930729653
+4f78a058778b5816:unconstrained,Always Full,0.0
+0d18ade00a799377:unconstrained,Always Full,0.0
+b4bbc96e28578799:unconstrained,Always Full,7.423485999565882
+69f52aec714ed803:unconstrained,Always Full,4.121822761621252
+0c89dff6627c716d:unconstrained,Always Full,0.0
+12ac4d40e52155f3:unconstrained,Always Full,6.06619001990123
+cd3a210a2089feed:unconstrained,Always Full,5.815362248606726
+045919e0f373a95e:unconstrained,Always Full,0.0
+e50379a323d8254b:unconstrained,Always Full,1.8721898724846975
+935f7304debac306:unconstrained,Always Full,0.0
+f4c0dd9eb3a08445:unconstrained,Always Full,0.0
+afbd95d32d061ea0:unconstrained,Always Full,0.9360949362423598
+b4bfa136109721cc:unconstrained,Always Full,1.2239847996111441
+95d32235dbf823e3:unconstrained,Always Full,0.0
+bbc0e0e88610b0e0:unconstrained,Always Full,0.0
+0636d0c4490d52d7:unconstrained,Always Full,0.0
+7cf4784a8a6d4099:unconstrained,Always Full,0.0
+494e0835d976dfbc:unconstrained,Always Full,0.0
+768c8a38903e4583:unconstrained,Always Full,1.8721898724846975
+ee4ac13049fd99ed:unconstrained,Always Full,2.7861620617599225
+0a6759c262a3b108:unconstrained,Always Full,0.4702484541044827
+5aff6c557a079974:unconstrained,Always Full,1.8721898724846975
+90e5a535c8f9dd4c:unconstrained,Always Full,1.5965939329430467
+bf77aed12c9de0d3:unconstrained,Always Full,0.0
+0830bada3075d39a:unconstrained,Always Full,0.7778018956660082
+4992301299a31b4b:unconstrained,Always Full,0.0
+3fb6cc4a7f88a7f8:unconstrained,Always Full,0.0
+a63abfbbd369b0e6:unconstrained,Always Full,0.7778018956660082
+95dfe9e1be56c3d4:unconstrained,Always Full,2.6743926899933212
+8cdcf8fbc579d869:unconstrained,Always Full,0.0
+d85e335a8f70e08d:unconstrained,Always Full,0.7778018956660082
+c92c7b32a21e3b3f:unconstrained,Always Full,5.4957636821616695
+3bf4e5f5dfb79adb:unconstrained,Always Full,0.38883386522872154
+ccceb374ab6e46c2:unconstrained,Always Full,0.7886549453729907
+15ade04e9c886859:unconstrained,Always Full,4.273673380554777
+41c41e62ca1c53e1:unconstrained,Always Full,0.0
+792de67f5dd65395:unconstrained,Always Full,0.7669488459590479
+fa4957af87fe3800:unconstrained,Always Full,0.0
+ea304a2304b21dea:unconstrained,Always Full,0.0
+207ec4043b9b67b9:unconstrained,Always Full,0.7669488459590479
+9150603aaae2df94:unconstrained,Always Full,2.6743926899933212
+cd1361bd810e2710:unconstrained,Always Full,0.0
+7e572175172889e3:unconstrained,Always Full,0.7669488459590479
+d88977606bf22941:unconstrained,Always Full,5.4957636821616695
+1dfbda94ee4e9d4a:unconstrained,Always Full,0.38883386522872154
+09661b517cc41a03:unconstrained,Always Full,0.7669488459590479
+0b9e36e55b70dab6:unconstrained,Always Full,6.397482957524914
+c64df3a028459489:unconstrained,Always Full,0.0
+6aa9affff0f5623e:unconstrained,Always Full,0.0
+af56445f01ef9add:unconstrained,Always Full,0.0
+9578939e64c52f65:unconstrained,Always Full,0.0
+e66da6cc6df15c1e:unconstrained,Always Full,0.0
+d763063f03ac459f:unconstrained,Always Full,0.0
+898e5652fd17eaf8:unconstrained,Always Full,0.0
+a8cca65ecdce139a:unconstrained,Always Full,0.7669488459590479
+f0655f8f061dd2fe:unconstrained,Always Full,2.6743926899933212
+01cf033b508b7021:unconstrained,Always Full,0.38883386522872154
+96acb578594d9d04:unconstrained,Always Full,0.7669488459590479
+8daee9cbff35ae08:unconstrained,Always Full,9.773784188539448
+e032ad37e8a9df0f:unconstrained,Always Full,1.3674842630779338
+c2b3a740857392f0:unconstrained,Always Full,0.10491281383402384
+5476341ea80ad34c:unconstrained,Always Full,1.0672165545184908
+72bc30664f40da1a:unconstrained,Always Full,0.10491281383402384
+5cb35f04af6642a0:unconstrained,Always Full,1.082131983419532
+573c8ea2a91a2628:unconstrained,Always Full,1.4506909774980148
+3bfd74ffc2be525d:unconstrained,Always Full,2.06558223599278
+01d546caab7f919c:unconstrained,Always Full,0.7354829243241268
+9297ea6017a14e63:unconstrained,Always Full,1.4506909774980148
+0f1f3b48eca89f82:unconstrained,Always Full,0.0
+32e2f1bf1f3817d1:unconstrained,Always Full,0.7778018956660082
+f799f04abc53e157:unconstrained,Always Full,0.0
+7a9d95592dc425f4:unconstrained,Always Full,0.0
+69480697b8a57132:unconstrained,Always Full,0.7778018956660082
+acb1bae47bbdc37c:unconstrained,Always Full,0.0
+8db2591cc0cb1e40:unconstrained,Always Full,0.0
+209617f3ef21191f:unconstrained,Always Full,0.7778018956660082
+371de4f90ffe332f:unconstrained,Always Full,0.0
+d59a4bfd665945ef:unconstrained,Always Full,0.38883386522872154
+c11792ff47f49826:unconstrained,Always Full,0.7886549453729907
+bcabc87fc46775aa:unconstrained,Always Full,0.39432747268648427
+82217e670a9d5ab6:unconstrained,Always Full,0.0
+62000d5de7e21bde:unconstrained,Always Full,0.7669488459590479
+08886ed292d0f845:unconstrained,Always Full,0.0
+b4117cd8dabc8c09:unconstrained,Always Full,0.0
+5293f5808c354d68:unconstrained,Always Full,0.7669488459590479
+babe8fb46b5b4070:unconstrained,Always Full,0.0
+1ce76de224962e52:unconstrained,Always Full,0.0
+cd1804f4f4afa59c:unconstrained,Always Full,0.7669488459590479
+d3aa042d52eb7561:unconstrained,Always Full,0.0
+0be535b37b6f426c:unconstrained,Always Full,0.38883386522872154
+e84576360d702f27:unconstrained,Always Full,0.7669488459590479
+1bd002c6db965e42:unconstrained,Always Full,1.0672165545184908
+47e08f5bb3084e97:unconstrained,Always Full,0.0
+5ed0da1bb4afb74a:unconstrained,Always Full,0.0
+fce6ebf735be06a4:unconstrained,Always Full,0.0
+1c72e75d42ae7423:unconstrained,Always Full,0.0
+ac411c10247a227f:unconstrained,Always Full,0.0
+38fb670c967bfe11:unconstrained,Always Full,0.0
+cb1337af73dacbcf:unconstrained,Always Full,0.0
+8973b6c69505b00c:unconstrained,Always Full,0.7669488459590479
+bc03dc742688768f:unconstrained,Always Full,0.0
+f7facef9cb2ffdfb:unconstrained,Always Full,0.38883386522872154
+fcf37c4489b773d9:unconstrained,Always Full,0.7669488459590479
+5c4d135a3b7af3fe:unconstrained,Always Full,0.7669488459590479
+9b7a8d6879e14086:unconstrained,Always Full,1.3674842630779338
+776a84201a90a296:unconstrained,Always Full,0.0
+9306847a11e3ab64:unconstrained,Always Full,1.0672165545184908
+fa3744661ddb502c:unconstrained,Always Full,0.0
+96597e80ccaa2540:unconstrained,Always Full,1.082131983419532
+a89c8c68040d9a91:unconstrained,Always Full,1.4506909774980148
+b26d03d7bff04ac4:unconstrained,Always Full,0.0
+1ad3f1acbd18475d:unconstrained,Always Full,0.7354829243241268
+eeae3463e30ddefd:unconstrained,Always Full,1.4506909774980148
+1d70f6ca93f21c39:unconstrained,Always Full,0.14832501266188736
+66b9aabd5ab73fa3:unconstrained,Always Prefix,0.0
+c99d2092688a2086:unconstrained,Always Prefix,12.059690493736186
+4585b61a5abd6d97:unconstrained,Always Prefix,6.36974276772766
+381103462e3a3601:unconstrained,Always Prefix,0.0
+f7c5094376f778c9:unconstrained,Always Prefix,11.971260132645533
+e7ec017c0b6f5fa6:unconstrained,Always Prefix,2.746143284064284
+ab62cc161dd2af12:unconstrained,Always Prefix,0.0
+f5cb6e841caab83a:unconstrained,Always Prefix,6.705969049373617
+7574635528258da4:unconstrained,Always Prefix,0.0
+c692b0443c4d6e64:unconstrained,Always Prefix,0.0
+132c886b16ec7093:unconstrained,Always Prefix,0.935991450786755
+b6b6c1c5ad12266e:unconstrained,Always Prefix,2.8242677824267703
+959c629c4ba4f353:unconstrained,Always Prefix,0.0
+eec7e82a03911a45:unconstrained,Always Prefix,9.434657625119769
+0fe34cec9169adad:unconstrained,Always Prefix,4.121822761621252
+02f36bd2e10d9cde:unconstrained,Always Prefix,0.0
+11f37d3818714a23:unconstrained,Always Prefix,6.06619001990123
+32aa10208ec49024:unconstrained,Always Prefix,5.815362248606726
+ed41cc7b891c8cc7:unconstrained,Always Prefix,0.0
+dc1b67702c662919:unconstrained,Always Prefix,1.8721898724846975
+94e5a9300fd2b18e:unconstrained,Always Prefix,0.0
+ec473bd1cb466b18:unconstrained,Always Prefix,0.0
+ee0151e66466fe6f:unconstrained,Always Prefix,0.0
+3a4ca9fbb3e2b567:unconstrained,Always Prefix,8.26683534449202
+e173b82ee5fdf898:unconstrained,Always Prefix,0.0
+49fb1f54b0fc3b13:unconstrained,Always Prefix,0.0
+4ef16ebb63754f7b:unconstrained,Always Prefix,0.0
+1b924f9c75eb4518:unconstrained,Always Prefix,0.0
+07bb1a78ba077223:unconstrained,Always Prefix,0.0
+6b68292f4f9ae6d8:unconstrained,Always Prefix,1.8721898724846975
+2c4d51c0160241e6:unconstrained,Always Prefix,2.7861620617599225
+776fe805d0cfa2db:unconstrained,Always Prefix,0.4702484541044827
+fb70e6e577488f2c:unconstrained,Always Prefix,0.9360949362423598
+8207bc05e3bafac4:unconstrained,Always Prefix,0.2515371716042436
+448bed37e16b35b7:unconstrained,Always Prefix,0.0
+e92b6dde8093f756:unconstrained,Always Prefix,0.0
+023b729110f8d522:unconstrained,Always Prefix,12.059690493736186
+2e17e9d6a6a47876:unconstrained,Always Prefix,6.36974276772766
+c9560f2fb9962c6b:unconstrained,Always Prefix,0.0
+6631fcc02dfbe039:unconstrained,Always Prefix,11.971260132645533
+f6ccb4edb7c2ece3:unconstrained,Always Prefix,2.746143284064284
+d1f189cd9e68c332:unconstrained,Always Prefix,0.0
+6468506195359255:unconstrained,Always Prefix,6.705969049373617
+3d01199f4100dc37:unconstrained,Always Prefix,1.2781340104144334
+8f6274bc51a269c9:unconstrained,Always Prefix,0.0
+dcde8eee9926029a:unconstrained,Always Prefix,0.011055017135275236
+d461516d2c6f8f58:unconstrained,Always Prefix,0.0
+c6a11d8677ae2ec4:unconstrained,Always Prefix,0.0
+1dc11b44c28e7bc4:unconstrained,Always Prefix,9.434657625119769
+2da0e65fdcf30c18:unconstrained,Always Prefix,4.121822761621252
+2fa6978180ff9c1f:unconstrained,Always Prefix,0.0
+d870eda5ddfc40fa:unconstrained,Always Prefix,6.06619001990123
+bf21aa47be54c9c0:unconstrained,Always Prefix,5.815362248606726
+d21e0a0742225bff:unconstrained,Always Prefix,0.0
+eb89935767c866eb:unconstrained,Always Prefix,1.8721898724846975
+748b7a1760398346:unconstrained,Always Prefix,0.36569438397910936
+4efa6e9754857d5a:unconstrained,Always Prefix,0.0
+42f394b39b65e5c2:unconstrained,Always Prefix,0.0
+d2c93127ee58efac:unconstrained,Always Prefix,0.4162895927601884
+b8c4cb685f4b6701:unconstrained,Always Prefix,0.0
+21f326d503c2a4eb:unconstrained,Always Prefix,0.0
+dee14dca84ef3920:unconstrained,Always Prefix,0.0
+78f0d95ce7164398:unconstrained,Always Prefix,0.0
+39acb25e3cd203f0:unconstrained,Always Prefix,0.0
+6efb0cc85830776b:unconstrained,Always Prefix,1.8721898724846975
+1b0786ac221dbc56:unconstrained,Always Prefix,2.7861620617599225
+14bb07b5d455368d:unconstrained,Always Prefix,0.4702484541044827
+03fdb3b31ee2ce84:unconstrained,Always Prefix,0.0
+95487db4cba45e45:unconstrained,Always Prefix,1.398409651768584
+cdf26be79968caab:unconstrained,Always Prefix,0.0
+af53858c5c4ee0ed:unconstrained,Always Prefix,0.0
+359ba8e3b39ffc8c:unconstrained,Always Prefix,3.969162659338976
+9850653cd5f9cadb:unconstrained,Always Prefix,0.0
+61f322b7103890a9:unconstrained,Always Prefix,13.51879145173176
+ada5265058d70411:unconstrained,Always Prefix,5.815362248606726
+cd31d459619733cb:unconstrained,Always Prefix,0.0
+80d459b45ecfe108:unconstrained,Always Prefix,2.6418570375829065
+252d7e2200123b9d:unconstrained,Always Prefix,0.0
+506dda400df4ce46:unconstrained,Always Prefix,0.0
+ed1cac5e0d8d29cd:unconstrained,Always Prefix,0.0
+4f78a058778b5816:unconstrained,Always Prefix,2.23747664769518
+0d18ade00a799377:unconstrained,Always Prefix,0.0
+b4bbc96e28578799:unconstrained,Always Prefix,5.397583387598592
+69f52aec714ed803:unconstrained,Always Prefix,4.121822761621252
+0c89dff6627c716d:unconstrained,Always Prefix,0.0
+12ac4d40e52155f3:unconstrained,Always Prefix,5.5502321810275035
+cd3a210a2089feed:unconstrained,Always Prefix,5.815362248606726
+045919e0f373a95e:unconstrained,Always Prefix,0.0
+e50379a323d8254b:unconstrained,Always Prefix,2.653497457064935
+935f7304debac306:unconstrained,Always Prefix,0.0
+f4c0dd9eb3a08445:unconstrained,Always Prefix,0.0
+afbd95d32d061ea0:unconstrained,Always Prefix,0.0
+b4bfa136109721cc:unconstrained,Always Prefix,1.590738367725697
+95d32235dbf823e3:unconstrained,Always Prefix,0.0
+bbc0e0e88610b0e0:unconstrained,Always Prefix,0.0
+0636d0c4490d52d7:unconstrained,Always Prefix,0.0
+7cf4784a8a6d4099:unconstrained,Always Prefix,0.0
+494e0835d976dfbc:unconstrained,Always Prefix,0.0
+768c8a38903e4583:unconstrained,Always Prefix,1.8721898724846975
+ee4ac13049fd99ed:unconstrained,Always Prefix,2.7861620617599225
+0a6759c262a3b108:unconstrained,Always Prefix,0.4702484541044827
+5aff6c557a079974:unconstrained,Always Prefix,1.3267487285324675
+90e5a535c8f9dd4c:unconstrained,Always Prefix,1.5965939329430467
+bf77aed12c9de0d3:unconstrained,Always Prefix,0.0
+0830bada3075d39a:unconstrained,Always Prefix,0.7778018956660082
+4992301299a31b4b:unconstrained,Always Prefix,0.0
+3fb6cc4a7f88a7f8:unconstrained,Always Prefix,0.0
+a63abfbbd369b0e6:unconstrained,Always Prefix,0.7778018956660082
+95dfe9e1be56c3d4:unconstrained,Always Prefix,2.6743926899933212
+8cdcf8fbc579d869:unconstrained,Always Prefix,0.0
+d85e335a8f70e08d:unconstrained,Always Prefix,0.7886549453729907
+c92c7b32a21e3b3f:unconstrained,Always Prefix,5.4957636821616695
+3bf4e5f5dfb79adb:unconstrained,Always Prefix,0.38883386522872154
+ccceb374ab6e46c2:unconstrained,Always Prefix,0.7886549453729907
+15ade04e9c886859:unconstrained,Always Prefix,2.8491155870365326
+41c41e62ca1c53e1:unconstrained,Always Prefix,0.0
+792de67f5dd65395:unconstrained,Always Prefix,0.7669488459590479
+fa4957af87fe3800:unconstrained,Always Prefix,0.0
+ea304a2304b21dea:unconstrained,Always Prefix,0.0
+207ec4043b9b67b9:unconstrained,Always Prefix,0.7669488459590479
+9150603aaae2df94:unconstrained,Always Prefix,2.6743926899933212
+cd1361bd810e2710:unconstrained,Always Prefix,0.0
+7e572175172889e3:unconstrained,Always Prefix,0.7669488459590479
+d88977606bf22941:unconstrained,Always Prefix,5.4957636821616695
+1dfbda94ee4e9d4a:unconstrained,Always Prefix,0.38883386522872154
+09661b517cc41a03:unconstrained,Always Prefix,0.7669488459590479
+0b9e36e55b70dab6:unconstrained,Always Prefix,4.356419668428058
+c64df3a028459489:unconstrained,Always Prefix,0.0
+6aa9affff0f5623e:unconstrained,Always Prefix,0.0
+af56445f01ef9add:unconstrained,Always Prefix,0.0
+9578939e64c52f65:unconstrained,Always Prefix,0.0
+e66da6cc6df15c1e:unconstrained,Always Prefix,0.0
+d763063f03ac459f:unconstrained,Always Prefix,0.0
+898e5652fd17eaf8:unconstrained,Always Prefix,0.0
+a8cca65ecdce139a:unconstrained,Always Prefix,0.7669488459590479
+f0655f8f061dd2fe:unconstrained,Always Prefix,2.6743926899933212
+01cf033b508b7021:unconstrained,Always Prefix,0.38883386522872154
+96acb578594d9d04:unconstrained,Always Prefix,0.7669488459590479
+8daee9cbff35ae08:unconstrained,Always Prefix,1.4187751241428126
+e032ad37e8a9df0f:unconstrained,Always Prefix,1.3674842630779338
+c2b3a740857392f0:unconstrained,Always Prefix,0.6837421315389669
+5476341ea80ad34c:unconstrained,Always Prefix,1.0672165545184908
+72bc30664f40da1a:unconstrained,Always Prefix,0.6837421315389669
+5cb35f04af6642a0:unconstrained,Always Prefix,1.082131983419532
+573c8ea2a91a2628:unconstrained,Always Prefix,1.4506909774980148
+3bfd74ffc2be525d:unconstrained,Always Prefix,2.6557485891335553
+01d546caab7f919c:unconstrained,Always Prefix,0.7354829243241268
+9297ea6017a14e63:unconstrained,Always Prefix,1.4506909774980148
+0f1f3b48eca89f82:unconstrained,Always Prefix,0.0
+32e2f1bf1f3817d1:unconstrained,Always Prefix,0.7778018956660082
+f799f04abc53e157:unconstrained,Always Prefix,0.0
+7a9d95592dc425f4:unconstrained,Always Prefix,0.0
+69480697b8a57132:unconstrained,Always Prefix,0.7778018956660082
+acb1bae47bbdc37c:unconstrained,Always Prefix,0.0
+8db2591cc0cb1e40:unconstrained,Always Prefix,0.0
+209617f3ef21191f:unconstrained,Always Prefix,0.7886549453729907
+371de4f90ffe332f:unconstrained,Always Prefix,0.0
+d59a4bfd665945ef:unconstrained,Always Prefix,0.38883386522872154
+c11792ff47f49826:unconstrained,Always Prefix,0.7886549453729907
+bcabc87fc46775aa:unconstrained,Always Prefix,0.5390348021127256
+82217e670a9d5ab6:unconstrained,Always Prefix,0.0
+62000d5de7e21bde:unconstrained,Always Prefix,0.7669488459590479
+08886ed292d0f845:unconstrained,Always Prefix,0.0
+b4117cd8dabc8c09:unconstrained,Always Prefix,0.0
+5293f5808c354d68:unconstrained,Always Prefix,0.7669488459590479
+babe8fb46b5b4070:unconstrained,Always Prefix,0.0
+1ce76de224962e52:unconstrained,Always Prefix,0.0
+cd1804f4f4afa59c:unconstrained,Always Prefix,0.7669488459590479
+d3aa042d52eb7561:unconstrained,Always Prefix,0.0
+0be535b37b6f426c:unconstrained,Always Prefix,0.38883386522872154
+e84576360d702f27:unconstrained,Always Prefix,0.7669488459590479
+1bd002c6db965e42:unconstrained,Always Prefix,0.10491281383402384
+47e08f5bb3084e97:unconstrained,Always Prefix,0.0
+5ed0da1bb4afb74a:unconstrained,Always Prefix,0.0
+fce6ebf735be06a4:unconstrained,Always Prefix,0.0
+1c72e75d42ae7423:unconstrained,Always Prefix,0.0
+ac411c10247a227f:unconstrained,Always Prefix,0.0
+38fb670c967bfe11:unconstrained,Always Prefix,0.0
+cb1337af73dacbcf:unconstrained,Always Prefix,0.0
+8973b6c69505b00c:unconstrained,Always Prefix,0.7669488459590479
+bc03dc742688768f:unconstrained,Always Prefix,0.0
+f7facef9cb2ffdfb:unconstrained,Always Prefix,0.38883386522872154
+fcf37c4489b773d9:unconstrained,Always Prefix,0.7669488459590479
+5c4d135a3b7af3fe:unconstrained,Always Prefix,0.9116561753852892
+9b7a8d6879e14086:unconstrained,Always Prefix,1.3674842630779338
+776a84201a90a296:unconstrained,Always Prefix,0.6837421315389669
+9306847a11e3ab64:unconstrained,Always Prefix,1.0672165545184908
+fa3744661ddb502c:unconstrained,Always Prefix,0.6837421315389669
+96597e80ccaa2540:unconstrained,Always Prefix,1.082131983419532
+a89c8c68040d9a91:unconstrained,Always Prefix,1.4506909774980148
+b26d03d7bff04ac4:unconstrained,Always Prefix,0.6837421315389669
+1ad3f1acbd18475d:unconstrained,Always Prefix,0.7354829243241268
+eeae3463e30ddefd:unconstrained,Always Prefix,1.4506909774980148
+1d70f6ca93f21c39:unconstrained,Always Prefix,1.595398306924256
+66b9aabd5ab73fa3:unconstrained,Always No Prefetch,0.0
+c99d2092688a2086:unconstrained,Always No Prefetch,1.8496683861459084
+4585b61a5abd6d97:unconstrained,Always No Prefetch,5.4957636821616695
+381103462e3a3601:unconstrained,Always No Prefetch,0.0
+f7c5094376f778c9:unconstrained,Always No Prefetch,1.8496683861459084
+e7ec017c0b6f5fa6:unconstrained,Always No Prefetch,11.630724497213475
+ab62cc161dd2af12:unconstrained,Always No Prefetch,0.0
+f5cb6e841caab83a:unconstrained,Always No Prefetch,1.8496683861459084
+7574635528258da4:unconstrained,Always No Prefetch,17.455596158749053
+c692b0443c4d6e64:unconstrained,Always No Prefetch,0.9404969082089876
+132c886b16ec7093:unconstrained,Always No Prefetch,1.8609278844382127
+b6b6c1c5ad12266e:unconstrained,Always No Prefetch,31.428299733739063
+959c629c4ba4f353:unconstrained,Always No Prefetch,0.0
+eec7e82a03911a45:unconstrained,Always No Prefetch,1.8721898724846975
+0fe34cec9169adad:unconstrained,Always No Prefetch,5.4957636821616695
+02f36bd2e10d9cde:unconstrained,Always No Prefetch,0.0
+11f37d3818714a23:unconstrained,Always No Prefetch,1.8721898724846975
+32aa10208ec49024:unconstrained,Always No Prefetch,11.630724497213475
+ed41cc7b891c8cc7:unconstrained,Always No Prefetch,0.0
+dc1b67702c662919:unconstrained,Always No Prefetch,1.8721898724846975
+94e5a9300fd2b18e:unconstrained,Always No Prefetch,19.901101761082685
+ec473bd1cb466b18:unconstrained,Always No Prefetch,0.9404969082089876
+ee0151e66466fe6f:unconstrained,Always No Prefetch,1.8721898724846975
+3a4ca9fbb3e2b567:unconstrained,Always No Prefetch,34.49785908913974
+e173b82ee5fdf898:unconstrained,Always No Prefetch,0.0
+49fb1f54b0fc3b13:unconstrained,Always No Prefetch,0.0
+c9c4d2311e2d63ce:unconstrained,Always No Prefetch,0.0
+4ef16ebb63754f7b:unconstrained,Always No Prefetch,0.0
+1b924f9c75eb4518:unconstrained,Always No Prefetch,0.0
+a45b9233ff5a41cf:unconstrained,Always No Prefetch,0.0
+07bb1a78ba077223:unconstrained,Always No Prefetch,0.0
+6b68292f4f9ae6d8:unconstrained,Always No Prefetch,1.8721898724846975
+2c4d51c0160241e6:unconstrained,Always No Prefetch,6.965405154399806
+776fe805d0cfa2db:unconstrained,Always No Prefetch,0.9404969082089876
+fb70e6e577488f2c:unconstrained,Always No Prefetch,1.8721898724846975
+8207bc05e3bafac4:unconstrained,Always No Prefetch,28.759083286752386
+14f4c14df0f32984:unconstrained,Always No Prefetch,0.0
+dd21b9197ff3866d:unconstrained,Always No Prefetch,0.0
+eb262e36de1d3df9:unconstrained,Always No Prefetch,0.0
+6ca8fa57a99ece71:unconstrained,Always No Prefetch,0.0
+a30f8b13fdad372e:unconstrained,Always No Prefetch,0.0
+423b961c47bae65e:unconstrained,Always No Prefetch,0.0
+af82bac0163aff36:unconstrained,Always No Prefetch,0.0
+95a9d3966b65f533:unconstrained,Always No Prefetch,2.5182657716129597
+dd0e7af7e4ddb3be:unconstrained,Always No Prefetch,10.031048483400994
+0bede96440e3b86d:unconstrained,Always No Prefetch,0.6312292358803928
+448bed37e16b35b7:unconstrained,Always No Prefetch,2.5182657716129597
+c3a2522cd0a28f12:unconstrained,Always No Prefetch,23.07212822796081
+e92b6dde8093f756:unconstrained,Always No Prefetch,0.0
+023b729110f8d522:unconstrained,Always No Prefetch,1.8496683861459084
+2e17e9d6a6a47876:unconstrained,Always No Prefetch,5.4957636821616695
+c9560f2fb9962c6b:unconstrained,Always No Prefetch,0.0
+6631fcc02dfbe039:unconstrained,Always No Prefetch,1.8496683861459084
+f6ccb4edb7c2ece3:unconstrained,Always No Prefetch,11.630724497213475
+d1f189cd9e68c332:unconstrained,Always No Prefetch,0.0
+6468506195359255:unconstrained,Always No Prefetch,1.8496683861459084
+3d01199f4100dc37:unconstrained,Always No Prefetch,18.956836080389028
+8f6274bc51a269c9:unconstrained,Always No Prefetch,0.9404969082089876
+dcde8eee9926029a:unconstrained,Always No Prefetch,1.8609278844382127
+d461516d2c6f8f58:unconstrained,Always No Prefetch,25.235592606016667
+c6a11d8677ae2ec4:unconstrained,Always No Prefetch,0.0
+1dc11b44c28e7bc4:unconstrained,Always No Prefetch,1.8721898724846975
+2da0e65fdcf30c18:unconstrained,Always No Prefetch,5.4957636821616695
+2fa6978180ff9c1f:unconstrained,Always No Prefetch,0.0
+d870eda5ddfc40fa:unconstrained,Always No Prefetch,1.8721898724846975
+bf21aa47be54c9c0:unconstrained,Always No Prefetch,11.630724497213475
+d21e0a0742225bff:unconstrained,Always No Prefetch,0.0
+eb89935767c866eb:unconstrained,Always No Prefetch,1.8721898724846975
+748b7a1760398346:unconstrained,Always No Prefetch,20.33957335655203
+4efa6e9754857d5a:unconstrained,Always No Prefetch,0.9404969082089876
+42f394b39b65e5c2:unconstrained,Always No Prefetch,1.8721898724846975
+d2c93127ee58efac:unconstrained,Always No Prefetch,25.076923076923087
+b8c4cb685f4b6701:unconstrained,Always No Prefetch,0.0
+21f326d503c2a4eb:unconstrained,Always No Prefetch,0.0
+4de62e48fe644da3:unconstrained,Always No Prefetch,0.0
+dee14dca84ef3920:unconstrained,Always No Prefetch,0.0
+78f0d95ce7164398:unconstrained,Always No Prefetch,0.0
+f51c890647c7821d:unconstrained,Always No Prefetch,0.0
+39acb25e3cd203f0:unconstrained,Always No Prefetch,0.0
+6efb0cc85830776b:unconstrained,Always No Prefetch,1.8721898724846975
+1b0786ac221dbc56:unconstrained,Always No Prefetch,6.965405154399806
+14bb07b5d455368d:unconstrained,Always No Prefetch,0.9404969082089876
+03fdb3b31ee2ce84:unconstrained,Always No Prefetch,1.8721898724846975
+95487db4cba45e45:unconstrained,Always No Prefetch,26.32300520976145
+4f64ff6f07b711bd:unconstrained,Always No Prefetch,0.0
+b2a191821726fb9f:unconstrained,Always No Prefetch,0.0
+4a04dcb6c04a1dd0:unconstrained,Always No Prefetch,0.0
+df95884f67fe51ad:unconstrained,Always No Prefetch,0.0
+0c92a0ecc7deab80:unconstrained,Always No Prefetch,0.0
+0c51446d1a5be6a8:unconstrained,Always No Prefetch,0.0
+5d45aa0d8688c4a8:unconstrained,Always No Prefetch,0.0
+81897cefa52ba591:unconstrained,Always No Prefetch,2.5182657716129597
+4dc5b2c189ec0a73:unconstrained,Always No Prefetch,10.031048483400994
+a508f4d1b3a34ae0:unconstrained,Always No Prefetch,0.6312292358803928
+cdf26be79968caab:unconstrained,Always No Prefetch,2.5182657716129597
+fe8aaef5ea8517a6:unconstrained,Always No Prefetch,22.494017548524337
+af53858c5c4ee0ed:unconstrained,Always No Prefetch,0.0
+63d6759a72a7c87a:unconstrained,Always No Prefetch,1.8496683861459084
+359ba8e3b39ffc8c:unconstrained,Always No Prefetch,5.4957636821616695
+9850653cd5f9cadb:unconstrained,Always No Prefetch,0.0
+61f322b7103890a9:unconstrained,Always No Prefetch,1.8496683861459084
+ada5265058d70411:unconstrained,Always No Prefetch,11.630724497213475
+cd31d459619733cb:unconstrained,Always No Prefetch,0.0
+80d459b45ecfe108:unconstrained,Always No Prefetch,1.8496683861459084
+252d7e2200123b9d:unconstrained,Always No Prefetch,17.455596158749053
+506dda400df4ce46:unconstrained,Always No Prefetch,0.9404969082089876
+ed1cac5e0d8d29cd:unconstrained,Always No Prefetch,1.8496683861459084
+4f78a058778b5816:unconstrained,Always No Prefetch,20.093843680757708
+0d18ade00a799377:unconstrained,Always No Prefetch,0.0
+b4bbc96e28578799:unconstrained,Always No Prefetch,0.0
+69f52aec714ed803:unconstrained,Always No Prefetch,5.4957636821616695
+0c89dff6627c716d:unconstrained,Always No Prefetch,0.0
+12ac4d40e52155f3:unconstrained,Always No Prefetch,1.8721898724846975
+cd3a210a2089feed:unconstrained,Always No Prefetch,11.630724497213475
+045919e0f373a95e:unconstrained,Always No Prefetch,0.0
+e50379a323d8254b:unconstrained,Always No Prefetch,1.8721898724846975
+935f7304debac306:unconstrained,Always No Prefetch,19.901101761082685
+f4c0dd9eb3a08445:unconstrained,Always No Prefetch,0.9404969082089876
+afbd95d32d061ea0:unconstrained,Always No Prefetch,1.8721898724846975
+b4bfa136109721cc:unconstrained,Always No Prefetch,22.142194335203925
+95d32235dbf823e3:unconstrained,Always No Prefetch,0.0
+bbc0e0e88610b0e0:unconstrained,Always No Prefetch,0.0
+f392ca3acf01bffb:unconstrained,Always No Prefetch,0.0
+0636d0c4490d52d7:unconstrained,Always No Prefetch,0.0
+7cf4784a8a6d4099:unconstrained,Always No Prefetch,0.0
+659fd0d24c23e88f:unconstrained,Always No Prefetch,0.0
+494e0835d976dfbc:unconstrained,Always No Prefetch,0.0
+768c8a38903e4583:unconstrained,Always No Prefetch,1.8721898724846975
+ee4ac13049fd99ed:unconstrained,Always No Prefetch,6.965405154399806
+0a6759c262a3b108:unconstrained,Always No Prefetch,0.9404969082089876
+5aff6c557a079974:unconstrained,Always No Prefetch,1.8721898724846975
+90e5a535c8f9dd4c:unconstrained,Always No Prefetch,22.591804151144235
+68f3e950089a5229:unconstrained,Always No Prefetch,0.0
+203954969f4ee111:unconstrained,Always No Prefetch,0.0
+a4aec4e948fadb71:unconstrained,Always No Prefetch,0.0
+815afe98fa409654:unconstrained,Always No Prefetch,0.0
+8be9bca8c437a8df:unconstrained,Always No Prefetch,0.0
+c28ca903fd28334f:unconstrained,Always No Prefetch,0.0
+108a6f876afb9b36:unconstrained,Always No Prefetch,0.0
+9438f983eeccd37c:unconstrained,Always No Prefetch,0.2357036660985523
+35d494d2df360e72:unconstrained,Always No Prefetch,10.031048483400994
+7716c348606533d0:unconstrained,Always No Prefetch,0.6312292358803928
+a3e66844694b6c52:unconstrained,Always No Prefetch,2.5182657716129597
+6826b39178e51eb1:unconstrained,Always No Prefetch,21.57276685578573
+bf77aed12c9de0d3:unconstrained,Always No Prefetch,0.0
+0830bada3075d39a:unconstrained,Always No Prefetch,0.0
+4992301299a31b4b:unconstrained,Always No Prefetch,0.0
+3fb6cc4a7f88a7f8:unconstrained,Always No Prefetch,0.0
+a63abfbbd369b0e6:unconstrained,Always No Prefetch,0.0
+95dfe9e1be56c3d4:unconstrained,Always No Prefetch,2.6743926899933212
+8cdcf8fbc579d869:unconstrained,Always No Prefetch,0.0
+d85e335a8f70e08d:unconstrained,Always No Prefetch,0.0
+c92c7b32a21e3b3f:unconstrained,Always No Prefetch,5.4957636821616695
+3bf4e5f5dfb79adb:unconstrained,Always No Prefetch,0.0
+ccceb374ab6e46c2:unconstrained,Always No Prefetch,0.0
+15ade04e9c886859:unconstrained,Always No Prefetch,9.382295912310546
+41c41e62ca1c53e1:unconstrained,Always No Prefetch,0.0
+792de67f5dd65395:unconstrained,Always No Prefetch,0.0
+fa4957af87fe3800:unconstrained,Always No Prefetch,0.0
+ea304a2304b21dea:unconstrained,Always No Prefetch,0.0
+207ec4043b9b67b9:unconstrained,Always No Prefetch,0.0
+9150603aaae2df94:unconstrained,Always No Prefetch,2.6743926899933212
+cd1361bd810e2710:unconstrained,Always No Prefetch,0.0
+7e572175172889e3:unconstrained,Always No Prefetch,0.0
+d88977606bf22941:unconstrained,Always No Prefetch,5.4957636821616695
+1dfbda94ee4e9d4a:unconstrained,Always No Prefetch,0.0
+09661b517cc41a03:unconstrained,Always No Prefetch,0.0
+0b9e36e55b70dab6:unconstrained,Always No Prefetch,11.500141180267033
+c64df3a028459489:unconstrained,Always No Prefetch,0.0
+6aa9affff0f5623e:unconstrained,Always No Prefetch,0.0
+af56445f01ef9add:unconstrained,Always No Prefetch,0.0
+9578939e64c52f65:unconstrained,Always No Prefetch,0.0
+e66da6cc6df15c1e:unconstrained,Always No Prefetch,0.0
+d763063f03ac459f:unconstrained,Always No Prefetch,0.0
+898e5652fd17eaf8:unconstrained,Always No Prefetch,0.0
+a8cca65ecdce139a:unconstrained,Always No Prefetch,0.0
+f0655f8f061dd2fe:unconstrained,Always No Prefetch,2.6743926899933212
+01cf033b508b7021:unconstrained,Always No Prefetch,0.0
+96acb578594d9d04:unconstrained,Always No Prefetch,0.0
+8daee9cbff35ae08:unconstrained,Always No Prefetch,8.938283282099778
+4b148af24b290b4e:unconstrained,Always No Prefetch,0.0
+e032ad37e8a9df0f:unconstrained,Always No Prefetch,0.0
+c2b3a740857392f0:unconstrained,Always No Prefetch,0.0
+a973863071e05e24:unconstrained,Always No Prefetch,0.0
+5476341ea80ad34c:unconstrained,Always No Prefetch,0.0
+72bc30664f40da1a:unconstrained,Always No Prefetch,0.0
+5cb35f04af6642a0:unconstrained,Always No Prefetch,0.0
+573c8ea2a91a2628:unconstrained,Always No Prefetch,0.0
+3bfd74ffc2be525d:unconstrained,Always No Prefetch,1.958614584486007
+01d546caab7f919c:unconstrained,Always No Prefetch,0.0
+9297ea6017a14e63:unconstrained,Always No Prefetch,0.0
+33b93d2bf5dfbd42:unconstrained,Always No Prefetch,7.9049068977631975
+0f1f3b48eca89f82:unconstrained,Always No Prefetch,0.0
+32e2f1bf1f3817d1:unconstrained,Always No Prefetch,0.0
+f799f04abc53e157:unconstrained,Always No Prefetch,0.0
+7a9d95592dc425f4:unconstrained,Always No Prefetch,0.0
+69480697b8a57132:unconstrained,Always No Prefetch,0.0
+acb1bae47bbdc37c:unconstrained,Always No Prefetch,0.0
+8db2591cc0cb1e40:unconstrained,Always No Prefetch,0.0
+209617f3ef21191f:unconstrained,Always No Prefetch,0.0
+371de4f90ffe332f:unconstrained,Always No Prefetch,0.0
+d59a4bfd665945ef:unconstrained,Always No Prefetch,0.0
+c11792ff47f49826:unconstrained,Always No Prefetch,0.0
+bcabc87fc46775aa:unconstrained,Always No Prefetch,0.0
+82217e670a9d5ab6:unconstrained,Always No Prefetch,0.0
+62000d5de7e21bde:unconstrained,Always No Prefetch,0.0
+08886ed292d0f845:unconstrained,Always No Prefetch,0.0
+b4117cd8dabc8c09:unconstrained,Always No Prefetch,0.0
+5293f5808c354d68:unconstrained,Always No Prefetch,0.0
+babe8fb46b5b4070:unconstrained,Always No Prefetch,0.0
+1ce76de224962e52:unconstrained,Always No Prefetch,0.0
+cd1804f4f4afa59c:unconstrained,Always No Prefetch,0.0
+d3aa042d52eb7561:unconstrained,Always No Prefetch,0.0
+0be535b37b6f426c:unconstrained,Always No Prefetch,0.0
+e84576360d702f27:unconstrained,Always No Prefetch,0.0
+1bd002c6db965e42:unconstrained,Always No Prefetch,0.0
+47e08f5bb3084e97:unconstrained,Always No Prefetch,0.0
+5ed0da1bb4afb74a:unconstrained,Always No Prefetch,0.0
+fce6ebf735be06a4:unconstrained,Always No Prefetch,0.0
+1c72e75d42ae7423:unconstrained,Always No Prefetch,0.0
+ac411c10247a227f:unconstrained,Always No Prefetch,0.0
+38fb670c967bfe11:unconstrained,Always No Prefetch,0.0
+cb1337af73dacbcf:unconstrained,Always No Prefetch,0.0
+8973b6c69505b00c:unconstrained,Always No Prefetch,0.0
+bc03dc742688768f:unconstrained,Always No Prefetch,0.0
+f7facef9cb2ffdfb:unconstrained,Always No Prefetch,0.0
+fcf37c4489b773d9:unconstrained,Always No Prefetch,0.0
+5c4d135a3b7af3fe:unconstrained,Always No Prefetch,0.0
+77d4e9fd4ebf183d:unconstrained,Always No Prefetch,0.0
+9b7a8d6879e14086:unconstrained,Always No Prefetch,0.0
+776a84201a90a296:unconstrained,Always No Prefetch,0.0
+17a2f5e836cc2fe9:unconstrained,Always No Prefetch,0.0
+9306847a11e3ab64:unconstrained,Always No Prefetch,0.0
+fa3744661ddb502c:unconstrained,Always No Prefetch,0.0
+96597e80ccaa2540:unconstrained,Always No Prefetch,0.0
+a89c8c68040d9a91:unconstrained,Always No Prefetch,0.0
+b26d03d7bff04ac4:unconstrained,Always No Prefetch,0.0
+1ad3f1acbd18475d:unconstrained,Always No Prefetch,0.0
+eeae3463e30ddefd:unconstrained,Always No Prefetch,0.0
+1d70f6ca93f21c39:unconstrained,Always No Prefetch,0.0

@@ -1,0 +1,12 @@
+{
+  "new_simulator_runs": 543,
+  "timing_control_runs": 3,
+  "policy_plan_runs": 540,
+  "full_m72_search_rerun": false,
+  "source_milestone": "source_router_done",
+  "latencies": [
+    7167,
+    4767,
+    2847
+  ]
+}

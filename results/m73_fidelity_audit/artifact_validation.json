@@ -1,0 +1,28 @@
+{
+  "full_m72_search_rerun": false,
+  "representative_point": {
+    "best_bds_candidate_count": 4,
+    "best_bds_depths": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "channels": 2,
+    "ocm_bytes": 49152,
+    "predictor_latency_cycles": 4767,
+    "quality": "medium",
+    "source_milestone": "source_router_done"
+  },
+  "row_counts": {
+    "bandwidth_calibration.csv": 16,
+    "compute_calibration.csv": 10,
+    "end_to_end_validation.csv": 1,
+    "ocm_fidelity.csv": 9,
+    "parameter_provenance.csv": 39,
+    "sensitivity_results.csv": 52
+  },
+  "simulator_semantics_modified": false,
+  "status": "PASS",
+  "unique_unified_simulator_runs": 44
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "rows": 1296,
+  "configurations": 324,
+  "tile_and_byte_conservation": true,
+  "ocm_capacity_invariant": true,
+  "hardware_validation": false
+}

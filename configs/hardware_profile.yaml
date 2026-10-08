@@ -1,0 +1,17 @@
+# SYNTHETIC / THEORETICAL STUDY INPUT ONLY.
+# 102.4 GB/s is an aggregate theoretical assumption, not achieved VEK280 bandwidth.
+hardware_profile:
+  name: vek280_like_theoretical_unmeasured
+  clock_hz: 1000000000
+  num_memory_channels: 3
+  bandwidth_bytes_per_sec_per_channel: 34133333333.333332
+  bandwidth_efficiency: 0.70
+  dma_setup_cycles: 200
+  max_inflight_per_channel: 1
+  burst_bytes: 4096
+  supports_channel_striping: true
+  total_aie_units: 64
+  ops_per_cycle_per_aie: 8.0
+  aie_efficiency: 0.60
+  aie_task_startup_cycles: 50
+  ocm_bytes: 67108864

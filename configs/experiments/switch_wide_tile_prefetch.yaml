@@ -1,0 +1,17 @@
+# 官方模型尺寸；配置硬件与合成 predictor，非 U200/CEPR 实测。
+models: [configs/models/switch_base_8.yaml, configs/models/switch_base_16.yaml]
+base_config: configs/experiments/switch_prefetch.yaml
+common_config: configs/experiments/mac_four_cases.yaml
+samples: 100
+seed: 20261005
+coverage: 0.844
+top1_coverage: 0.758
+candidate_multiplier: 16
+prefix_depth: 2
+f_tile_size: 128
+burst_bytes: 4096
+ocm_bytes: 16777216
+prefetch_budget_experts: 2
+ops_per_cycle: 32
+bytes_per_cycle_per_channel: [8, 16]
+ranked_depth_decay: 0.5

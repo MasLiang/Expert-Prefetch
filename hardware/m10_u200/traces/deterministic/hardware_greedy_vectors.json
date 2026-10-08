@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "name": "two_channel_prefix_and_load",
+      "channels": 2,
+      "tiles_per_expert": 3,
+      "gu_bytes": 64,
+      "down_bytes": 64,
+      "budget_bytes": 512,
+      "candidates": [
+        {"expert_id": 0, "confidence": 1.0},
+        {"expert_id": 1, "confidence": 0.75},
+        {"expert_id": 2, "confidence": 0.5}
+      ],
+      "expected_logical_allocation": [
+        {"expert_id": 0, "tile_id": 0, "channel": 0, "logical_bytes": 128},
+        {"expert_id": 1, "tile_id": 0, "channel": 1, "logical_bytes": 128},
+        {"expert_id": 2, "tile_id": 0, "channel": 0, "logical_bytes": 128},
+        {"expert_id": 1, "tile_id": 1, "channel": 1, "logical_bytes": 128}
+      ]
+    },
+    {
+      "name": "zero_budget", "channels": 2, "tiles_per_expert": 3,
+      "gu_bytes": 64, "down_bytes": 64, "budget_bytes": 0,
+      "candidates": [{"expert_id": 0, "confidence": 1.0}],
+      "expected_logical_allocation": []
+    },
+    {
+      "name": "sub_tile_budget", "channels": 2, "tiles_per_expert": 3,
+      "gu_bytes": 64, "down_bytes": 64, "budget_bytes": 127,
+      "candidates": [{"expert_id": 0, "confidence": 1.0}],
+      "expected_logical_allocation": []
+    },
+    {
+      "name": "single_expert_full_prefix", "channels": 2, "tiles_per_expert": 3,
+      "gu_bytes": 64, "down_bytes": 64, "budget_bytes": 512,
+      "candidates": [{"expert_id": 1, "confidence": 1.0}],
+      "expected_logical_allocation": [
+        {"expert_id": 1, "tile_id": 0, "channel": 1, "logical_bytes": 128},
+        {"expert_id": 1, "tile_id": 1, "channel": 1, "logical_bytes": 128},
+        {"expert_id": 1, "tile_id": 2, "channel": 1, "logical_bytes": 128}
+      ]
+    },
+    {
+      "name": "equal_confidence_rank_tie", "channels": 2, "tiles_per_expert": 2,
+      "gu_bytes": 64, "down_bytes": 64, "budget_bytes": 256,
+      "candidates": [{"expert_id": 2, "confidence": 1.0}, {"expert_id": 1, "confidence": 1.0}],
+      "expected_logical_allocation": [
+        {"expert_id": 2, "tile_id": 0, "channel": 0, "logical_bytes": 128},
+        {"expert_id": 1, "tile_id": 0, "channel": 1, "logical_bytes": 128}
+      ]
+    }
+  ]
+}

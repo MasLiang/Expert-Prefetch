@@ -1,0 +1,13 @@
+# 小型真实数值 Switch/ReLU FFN；不是完整 Switch 模型或板级测量。
+expert_architecture: relu_ffn
+alignment_base: configs/hardware/u200_ingress_alignment.yaml
+layers: 3
+route_k: 1
+slots_per_bank: 8
+descriptor_entries: 32
+fifo_depth: 8
+prediction_patterns: [hit, wrong]
+bandwidth_points:
+  - {name: fast, ddr_beat_gap: 0, nominal_bytes_per_cycle_per_channel: 16}
+  - {name: medium, ddr_beat_gap: 4, nominal_bytes_per_cycle_per_channel: 8}
+  - {name: slow, ddr_beat_gap: 8, nominal_bytes_per_cycle_per_channel: 4}

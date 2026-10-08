@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "rows": 336,
+  "configurations": 48,
+  "allocation_conservation": true,
+  "ocm_and_bandwidth_plan_limits": true,
+  "oracle_dominance": true,
+  "hardware_validation": false
+}

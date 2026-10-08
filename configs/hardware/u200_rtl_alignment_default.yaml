@@ -1,0 +1,40 @@
+# 完整默认RTL容量，服务时间由RTL结构/公式解析给出，不是U200板级测量。
+alignment:
+  fixture_profile: default_u200
+  clock_hz: 200000000
+  hidden_size: 16
+  intermediate_size: 256
+  num_experts: 64
+  top_k: 2
+  f_tile_size: 16
+  max_candidates: 16
+  ocm_banks: 4
+  slots_per_bank: 32
+  ocm_slots: 128
+  ocm_slot_bytes: 4096
+  reserved_demand_slots: 2
+  descriptor_entries: 64
+  dma_fifo_depth: 16
+  physical_memory_channels: 4
+  max_burst_bytes: 256
+  epoch_id: 1
+  gu_base_addr: 65536
+  down_base_addr: 131072
+  expert_stride_bytes: 16384
+  physical_tile_bytes: 256
+  ops_per_cycle: 4
+  mac_startup_cycles: 1
+  router_start_cycle: 1
+  # Top-K扫描 K*E + 42 控制周期，沿用旧配置的结构性估计。
+  router_control_cycles: 170
+  # resolver逐项扫描64 entries，另有4周期drain；不从RTL结果拟合。
+  demand_release_delay_cycles: 68
+  nonlinear_elements_per_cycle: 1
+  tile_dispatch_cycles: 8
+  combine_cycles: 3
+  dma_setup_cycles_per_burst: 6
+  no_gaps_bytes_per_cycle_per_bank: 8
+  gaps_bytes_per_cycle_per_bank: 6
+  total_cycle_relative_tolerance: 0.10
+  weight_wait_absolute_tolerance_cycles: 4
+  speedup_absolute_tolerance: 0.005

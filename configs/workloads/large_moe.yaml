@@ -1,0 +1,21 @@
+workload:
+  name: large_moe
+  description: Large MoE stress-test characterization workload
+  provenance: representative synthetic derived from MoE scaling
+  model:
+    hidden_size: 2048
+    intermediate_size: 8192
+    num_experts: 256
+    top_k: 2
+    weight_bits: 8
+    activation_bits: 8
+    num_moe_layers: 24
+  tile:
+    f_tile_size: 512
+  routing:
+    candidate_count: 64
+    true_ranks_by_quality:
+      perfect: [1, 2]
+      high: [1, 16]
+      medium: [12, 32]
+      low: [32, 64]

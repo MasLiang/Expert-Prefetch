@@ -1,0 +1,56 @@
+# 架构规则对齐+假想单Engine MAC宽度扫描，不是RTL新增能力或板级测量。
+base_config: configs/experiments/switch_prefetch.yaml
+catalogue: configs/models/real_moe_catalogue.yaml
+seeds: [20261005, 20261006, 20261007]
+layers: 4
+coverage: 0.9
+candidate_multiplier: 2
+prefix_depth: 2
+mac_groups: [1, 2, 4, 8, 16]
+ops_per_cycle_per_group: 32
+bytes_per_cycle_per_channel: [4, 16, 64]
+burst_bytes: 4096
+ocm_banks: 4
+slots_per_bank: 12
+descriptor_entries: 64
+dma_fifo_depth: 16
+models:
+  - name: synthetic_rtl_swiglu
+    hidden_size: 128
+    intermediate_size: 512
+    num_experts: 16
+    top_k: 2
+    f_tile_size: 64
+    samples: 5
+  - name: olmoe_1b_7b
+    f_tile_size: 128
+    samples: 1
+    mac_groups: [1, 4, 16]
+    bytes_per_cycle_per_channel: [16]
+# 明确结构估计；不从总cycle回归拟合。Router控制另按E/K推导。
+control:
+  descriptor_retirement_cycles: 2
+  dma_selection_cycles: 4
+  dma_burst_gap_cycles: 1
+  dma_request_latency_cycles: 3
+  dma_request_interval_cycles: 1
+  dma_payload_cycle_multiplier: 2
+  dma_return_cycles: 2
+  router_truth_emit_cycles: 1
+  block_prefetch_during_layer_retirement: true
+  demand_dispatch_cycles: 5
+  route_scan_cycles_per_entry: 1
+  route_resolver_drain_cycles: 4
+  route_commit_visibility_cycles: 3
+  committed_launch_cycles: 1
+  truth_scheduler_refresh_cycles: 2
+  expert_combine_cycles: 2
+  ocm_payload_visibility_cycles: 1
+  tile_dispatch_cycles: 4
+  nonlinear_handoff_cycles: 1
+  layer_combine_cycles: 4
+  layer_retirement_cycles: 15
+  ingress_pair_cycles: 3
+  fifo_push_blocks_dequeue: true
+  layer_retirement_probe_cycles: 2
+  layer_retirement_wait_for_ingress: true

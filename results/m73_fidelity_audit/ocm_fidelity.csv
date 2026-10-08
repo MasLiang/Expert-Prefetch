@@ -1,0 +1,10 @@
+check,completed_speculative_bytes,evicted_speculative_bytes,initial_speculative_allocation_bytes,interpretation,physical_speculative_bytes_at_router,rejected_speculative_bytes,source_reference,source_type,status,unit,value
+reference capacity,,,,"Capacity is explicit and finite, but not a measured board capacity.",,,M7.2b representative point,SYNTHETIC_WORKLOAD_PARAMETER,PASS,bytes,49152
+demand working-set normalization,,,,"Simulator-derived demand reference, not physical local-memory organization.",,,M7.2a large-capacity convergence,DERIVED,PASS_WITH_LIMITATION,bytes,32768
+capacity/reference ratio,,,,The representative point intentionally permits moderate speculative pressure.,,,49152/32768,DERIVED,PASS,ratio,1.5
+bank/port organization,,,,"No bank conflicts, ports, fragmentation, or local access latency.",,,CapacityOCM abstraction,ASSUMED,LIMITATION,n/a,not modeled
+resident vs allocated distinction,,,,"Peak OCM is allocation occupancy, not transferred bytes.",,,CapacityOCM byte-cycle accounting,DERIVED,PASS,boolean,allocation intervals tracked
+policy accounting: NO_PREFETCH,0,0,0,"Allocation, peak occupancy, and physical progress are separate quantities.",0,0,representative unified simulation,DERIVED,PASS,peak allocated bytes,32768
+policy accounting: RANKED_PREFIX,20480,274432,294912,"Allocation, peak occupancy, and physical progress are separate quantities.",6835,0,representative unified simulation,DERIVED,PASS,peak allocated bytes,49152
+policy accounting: FULL_EXPERT,20480,1552384,1572864,"Allocation, peak occupancy, and physical progress are separate quantities.",6835,0,representative unified simulation,DERIVED,PASS,peak allocated bytes,49152
+policy accounting: BREADTH_DEPTH_SEARCH,16384,0,32768,"Allocation, peak occupancy, and physical progress are separate quantities.",10956,0,representative unified simulation,DERIVED,PASS,peak allocated bytes,49152

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "rows": 1296,
+  "configurations": 144,
+  "fixed_prediction_trace_identity": true,
+  "tile_and_byte_conservation": true,
+  "ocm_bandwidth_dma_constraints": true,
+  "full_oracle_dominance": true,
+  "fixed_prediction_oracle_dominance": true,
+  "hardware_validation": false
+}

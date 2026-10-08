@@ -1,0 +1,181 @@
+[
+  {
+    "figure_id": "fig01_policy_phase_quality_vs_opportunity",
+    "source_csv": "phase/m72_phase_quality_opportunity.csv",
+    "hardware_mode": "controlled_synthetic_hardware",
+    "x": "opportunity",
+    "y": "predictor_quality_scalar",
+    "grouping": "winning_policy",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      ""
+    ],
+    "png": "results/m72_policy_phase/figures/fig01_policy_phase_quality_vs_opportunity.png",
+    "pdf": "results/m72_policy_phase/figures/fig01_policy_phase_quality_vs_opportunity.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig01_policy_phase_quality_vs_opportunity.csv"
+  },
+  {
+    "figure_id": "fig02_policy_phase_quality_vs_ocm",
+    "source_csv": "phase/m72_phase_quality_ocm.csv",
+    "hardware_mode": "controlled_synthetic_hardware",
+    "x": "ocm_ratio",
+    "y": "predictor_quality_scalar",
+    "grouping": "winning_policy",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      ""
+    ],
+    "png": "results/m72_policy_phase/figures/fig02_policy_phase_quality_vs_ocm.png",
+    "pdf": "results/m72_policy_phase/figures/fig02_policy_phase_quality_vs_ocm.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig02_policy_phase_quality_vs_ocm.csv"
+  },
+  {
+    "figure_id": "fig03_policy_phase_opportunity_vs_channels",
+    "source_csv": "phase/m72_phase_opportunity_channels.csv",
+    "hardware_mode": "controlled_synthetic_hardware",
+    "x": "opportunity",
+    "y": "channels",
+    "grouping": "winning_policy",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      ""
+    ],
+    "png": "results/m72_policy_phase/figures/fig03_policy_phase_opportunity_vs_channels.png",
+    "pdf": "results/m72_policy_phase/figures/fig03_policy_phase_opportunity_vs_channels.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig03_policy_phase_opportunity_vs_channels.csv"
+  },
+  {
+    "figure_id": "fig04_breadth_depth_strategy_map",
+    "source_csv": "search/m72_breadth_depth_search.csv",
+    "hardware_mode": "controlled_synthetic_hardware",
+    "x": "configuration_opportunity_expert_equivalents",
+    "y": "predictor_quality_scalar",
+    "grouping": "candidate_count",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      "rank-controlled:seed=17:ranks=(1, 2, 3, 4)|rank-controlled:seed=17:ranks=(1, 2, 3, 4)",
+      "rank-controlled:seed=17:ranks=(1, 2, 4, 7)|rank-controlled:seed=17:ranks=(1, 2, 4, 7)",
+      "rank-controlled:seed=17:ranks=(1, 3, 7, 13)|rank-controlled:seed=17:ranks=(1, 3, 7, 13)",
+      "rank-controlled:seed=17:ranks=(17, 21, 25, 29)|rank-controlled:seed=17:ranks=(17, 21, 25, 29)",
+      "rank-controlled:seed=17:ranks=(3, 7, 13, 25)|rank-controlled:seed=17:ranks=(3, 7, 13, 25)"
+    ],
+    "png": "results/m72_policy_phase/figures/fig04_breadth_depth_strategy_map.png",
+    "pdf": "results/m72_policy_phase/figures/fig04_breadth_depth_strategy_map.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig04_breadth_depth_strategy_map.csv"
+  },
+  {
+    "figure_id": "fig05_policy_speedup",
+    "source_csv": "raw/m72_policy_evaluations.csv",
+    "hardware_mode": "controlled_synthetic_hardware",
+    "x": "configuration_opportunity_expert_equivalents",
+    "y": "speedup_vs_no_prefetch",
+    "grouping": "plot_group",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      "rank-controlled:seed=17:ranks=(1, 2, 3, 4)|rank-controlled:seed=17:ranks=(1, 2, 3, 4)",
+      "rank-controlled:seed=17:ranks=(1, 3, 7, 13)|rank-controlled:seed=17:ranks=(1, 3, 7, 13)"
+    ],
+    "png": "results/m72_policy_phase/figures/fig05_policy_speedup.png",
+    "pdf": "results/m72_policy_phase/figures/fig05_policy_speedup.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig05_policy_speedup.csv"
+  },
+  {
+    "figure_id": "fig06_waste_vs_performance",
+    "source_csv": "raw/m72_policy_evaluations.csv",
+    "hardware_mode": "controlled_synthetic_hardware",
+    "x": "wasted_physical_speculative_bytes",
+    "y": "sequence_makespan",
+    "grouping": "policy",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      "rank-controlled:seed=17:ranks=(1, 2, 3, 4)|rank-controlled:seed=17:ranks=(1, 2, 3, 4)",
+      "rank-controlled:seed=17:ranks=(1, 3, 7, 13)|rank-controlled:seed=17:ranks=(1, 3, 7, 13)"
+    ],
+    "png": "results/m72_policy_phase/figures/fig06_waste_vs_performance.png",
+    "pdf": "results/m72_policy_phase/figures/fig06_waste_vs_performance.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig06_waste_vs_performance.csv"
+  },
+  {
+    "figure_id": "fig07_ocm_cost_vs_latency",
+    "source_csv": "raw/m72_policy_evaluations.csv",
+    "hardware_mode": "controlled_synthetic_hardware",
+    "x": "peak_ocm_bytes",
+    "y": "sequence_makespan",
+    "grouping": "policy",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      "rank-controlled:seed=17:ranks=(1, 3, 7, 13)|rank-controlled:seed=17:ranks=(1, 3, 7, 13)"
+    ],
+    "png": "results/m72_policy_phase/figures/fig07_ocm_cost_vs_latency.png",
+    "pdf": "results/m72_policy_phase/figures/fig07_ocm_cost_vs_latency.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig07_ocm_cost_vs_latency.csv"
+  },
+  {
+    "figure_id": "fig08_startup_vs_streaming",
+    "source_csv": "raw/m72_policy_evaluations.csv",
+    "hardware_mode": "controlled_synthetic_hardware",
+    "x": "critical_expert_startup_gap_cycles",
+    "y": "sequence_makespan",
+    "grouping": "policy",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      "rank-controlled:seed=17:ranks=(1, 2, 3, 4)|rank-controlled:seed=17:ranks=(1, 2, 3, 4)",
+      "rank-controlled:seed=17:ranks=(1, 3, 7, 13)|rank-controlled:seed=17:ranks=(1, 3, 7, 13)"
+    ],
+    "png": "results/m72_policy_phase/figures/fig08_startup_vs_streaming.png",
+    "pdf": "results/m72_policy_phase/figures/fig08_startup_vs_streaming.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig08_startup_vs_streaming.csv"
+  },
+  {
+    "figure_id": "fig09_static_policy_regret",
+    "source_csv": "tables/m72_heuristic_regret.csv",
+    "hardware_mode": "controlled_synthetic_hardware",
+    "x": "mean_regret_percent",
+    "y": "max_regret_percent",
+    "grouping": "heuristic",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      ""
+    ],
+    "png": "results/m72_policy_phase/figures/fig09_static_policy_regret.png",
+    "pdf": "results/m72_policy_phase/figures/fig09_static_policy_regret.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig09_static_policy_regret.csv"
+  },
+  {
+    "figure_id": "fig10_vek280_theoretical_projection",
+    "source_csv": "vek280_theoretical/m72_vek280_theoretical.csv",
+    "hardware_mode": "vek280_theoretical",
+    "x": "predictor_quality_scalar",
+    "y": "speedup_vs_no_prefetch",
+    "grouping": "policy",
+    "fixed_filters": "see exact plotting CSV",
+    "policy_set": "P0-P4",
+    "normalization_baseline": "no_prediction where applicable",
+    "trace_ids": [
+      "rank-controlled:seed=17:ranks=(1, 2, 3, 4)|rank-controlled:seed=17:ranks=(1, 2, 3, 4)",
+      "rank-controlled:seed=17:ranks=(1, 3, 7, 13)|rank-controlled:seed=17:ranks=(1, 3, 7, 13)",
+      "rank-controlled:seed=17:ranks=(17, 21, 25, 29)|rank-controlled:seed=17:ranks=(17, 21, 25, 29)"
+    ],
+    "png": "results/m72_policy_phase/figures/fig10_vek280_theoretical_projection.png",
+    "pdf": "results/m72_policy_phase/figures/fig10_vek280_theoretical_projection.pdf",
+    "plot_data": "results/m72_policy_phase/figures/data/fig10_vek280_theoretical_projection.csv"
+  }
+]

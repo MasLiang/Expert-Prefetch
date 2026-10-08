@@ -1,0 +1,21 @@
+{
+  "source_rows_reused": 23323,
+  "new_simulations_this_run": 0,
+  "new_simulations_total": 8,
+  "full_m72_search_rerun": false,
+  "gain_summary": {
+    "configurations_compared": 209,
+    "strict_bds_wins": 50,
+    "strict_bds_wins_gt_1pct": 36,
+    "strict_bds_wins_gt_5pct": 11,
+    "median_gain_percent_among_wins": 2.7470125625725594,
+    "max_gain_percent": 18.343722172751555,
+    "latency_ties": 155,
+    "ties_with_lower_allocation": 155,
+    "tie_fraction_lower_allocation": 1.0,
+    "median_allocated_byte_reduction_when_lower": 122880,
+    "tie_fraction_lower_peak_ocm": 0.27741935483870966,
+    "tie_fraction_lower_physical_traffic": 0.16774193548387098
+  },
+  "figures": 10
+}

@@ -1,0 +1,15 @@
+# Google 官方结构；INT8 为本实验部署假设，不是 FLAME 报告的位宽。
+# 来源：https://huggingface.co/google/switch-base-8/blob/main/config.json
+# 仅 decoder 的 6 个 MoE 层；不模拟 attention 或 encoder。
+model:
+  name: switch_base_8_decoder
+  hidden_size: 768
+  intermediate_size: 3072
+  num_experts: 8
+  top_k: 1
+  weight_bits: 8
+  activation_bits: 8
+  expert_architecture: relu_ffn
+  fuse_gate_up: false
+  router_weights_resident: true
+  moe_layer_indices: [1, 3, 5, 7, 9, 11]

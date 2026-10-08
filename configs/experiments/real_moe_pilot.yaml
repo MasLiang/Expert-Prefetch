@@ -1,0 +1,21 @@
+# 真实模型结构 + 合成路由，不是完整 LLM 推理，也不是板上测量。
+catalogue: configs/models/real_moe_catalogue.yaml
+alignment_base: configs/hardware/u200_ingress_alignment.yaml
+simulated_layers: 4
+seed: 20261005
+weight_bits: 8
+activation_bits: 8
+f_tile_size: 128
+candidate_multiplier: 2
+predictor_latency_cycles: 20
+# 新实验统一采用资源感知放行；历史结果以各自保存的配置为准。
+wait_for_previous_layer_weights: false
+prefix_depth: 2
+nonlinear_elements_per_cycle: 16
+ocm_capacity_bytes: [8388608, 16777216]
+ops_per_cycle: [32, 512]
+qualities: [perfect, partial]
+policies: [uniform_prefix, ranked_prefix]
+# 逻辑 burst 粒度放大至 16 KiB，保留 burst 仲裁，不等于现有 RTL 的 256 B。
+# 这是可配置 scale-study 输入；需要另做 burst sensitivity，不能声称 RTL 已支持。
+burst_bytes: 16384

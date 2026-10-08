@@ -1,0 +1,14 @@
+# 合成机制实验，不代表板卡实测。保存激励复用，不重新抽样历史 Top-1。
+historical_directory: results/prefetch_dense
+base_config: configs/experiments/prefetch_phase.yaml
+seeds: [20261005, 20261006, 20261007, 20261008, 20261009]
+historical_groups: [2, 4, 16]
+historical_ratios: [0.9, 1.0, 2.0]
+growth_groups: [2, 4, 8, 16, 32]
+growth_ratios: [0.9, 2.0]
+top_ks: [1, 2, 4]
+capacity_modes: [scaled_expert, fixed_bytes]
+depth_modes: [shallow, proportional]
+quality: 0.9
+ocm_expert_equivalents: 4
+anchor_groups: 2

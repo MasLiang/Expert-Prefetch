@@ -1,0 +1,21 @@
+{
+  "configurations": 240,
+  "comparison_modes": [
+    "unconstrained",
+    "fixed_budget"
+  ],
+  "fixed_budget_bytes": 131072,
+  "main_grid_simulation_attempts": 14640,
+  "total_simulation_attempts": 15676,
+  "main_grid_feasible_rows": 12249,
+  "search_plan_statistics": {
+    "generated": 25920,
+    "unique": 12720,
+    "static_pruned": 5520,
+    "duplicate_pruned": 7680
+  },
+  "dynamically_infeasible_policy_plans": 2391,
+  "refined_boundary_points": 10,
+  "representative_traces": 5,
+  "resume_mode": "CSV post-processing; no simulation rerun"
+}

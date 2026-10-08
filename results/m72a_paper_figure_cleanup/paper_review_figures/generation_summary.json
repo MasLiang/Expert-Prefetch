@@ -1,0 +1,18 @@
+{
+  "new_simulations": 0,
+  "source_figures_found": 10,
+  "figures_regenerated": 9,
+  "global_confidence": {
+    "total": 240,
+    "robust": 46,
+    "near": 69,
+    "exact_tie": 125
+  },
+  "fig04_M_distribution": {
+    "1": 35,
+    "2": 22,
+    "4": 30,
+    "8": 2,
+    "16": 0
+  }
+}

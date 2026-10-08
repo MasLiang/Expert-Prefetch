@@ -1,0 +1,43 @@
+{
+  "budget_proportional_gap_by_quality_percent": {
+    "high": 25.90136640045923,
+    "low": 33.82886528519805,
+    "medium": 27.99101233583133,
+    "perfect": 23.808653815408633
+  },
+  "configurations": 48,
+  "fpga_rtl_or_hls_implemented": false,
+  "hardware_greedy_gap_by_quality_percent": {
+    "high": 26.589904172273197,
+    "low": 33.689254113138006,
+    "medium": 28.80367011655041,
+    "perfect": 26.41699165497104
+  },
+  "hardware_validation": false,
+  "mean_oracle_gap_percent": {
+    "budget_proportional": 27.88247445922431,
+    "full_expert": 35.739934100656505,
+    "hardware_greedy": 28.874955014233162,
+    "no_prefetch": 43.378082731664165,
+    "oracle": 0.0,
+    "ranked_tile": 28.595761516219248,
+    "uniform_tile": 29.4591361700513
+  },
+  "online_winner_membership_including_ties": {
+    "budget_proportional": 29,
+    "full_expert": 5,
+    "hardware_greedy": 21,
+    "ranked_tile": 24,
+    "uniform_tile": 22
+  },
+  "oracle_candidate_simulations": 3966,
+  "plots": [
+    "fig_m9_speedup_vs_ocm.png",
+    "fig_m9_speedup_vs_ocm.pdf",
+    "fig_m9_oracle_gap.png",
+    "fig_m9_oracle_gap.pdf",
+    "fig_m9_complexity_vs_gap.png",
+    "fig_m9_complexity_vs_gap.pdf"
+  ],
+  "reported_scheduler_runs": 336
+}

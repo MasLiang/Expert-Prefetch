@@ -1,0 +1,12 @@
+# 官方尺寸 + 合成路由/预测；不下载模型、不做真实 LLM 推理。
+catalogue: configs/models/real_moe_catalogue.yaml
+base_config: configs/experiments/switch_prefetch.yaml
+models: [olmoe_1b_7b, mixtral_8x7b, mixtral_8x22b]
+samples: 50
+simulated_layers: 6
+seed: 20261005
+coverage: 0.844
+candidate_multiplier: 2
+weight_bits: 8
+activation_bits: 8
+# OCM、算力、F tile、DMA 和非线性吞吐沿用 base_config。

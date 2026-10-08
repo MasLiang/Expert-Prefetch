@@ -1,0 +1,43 @@
+# 官方 config.json 的结构字段摘录，不是完整 config，也不包含权重。
+# 总参数量是官方发布的近似量；routed Expert 参数量由 3*H*F 推导。
+models:
+  - name: olmoe_1b_7b
+    repository: allenai/OLMoE-1B-7B-0924
+    revision: 83792c65a757954d4dfbd677732dd914397f5d69
+    published_total_parameters_approx: 7000000000
+    upstream_config:
+      model_type: olmoe
+      hidden_size: 2048
+      intermediate_size: 1024
+      num_experts: 64
+      num_experts_per_tok: 8
+      num_hidden_layers: 16
+      torch_dtype: bfloat16
+      hidden_act: silu
+      norm_topk_prob: false
+  - name: mixtral_8x7b
+    repository: mistralai/Mixtral-8x7B-v0.1
+    revision: 58301445dc1378584211722b7ebf8743ec4e192b
+    published_total_parameters_approx: 46700000000
+    upstream_config:
+      model_type: mixtral
+      hidden_size: 4096
+      intermediate_size: 14336
+      num_local_experts: 8
+      num_experts_per_tok: 2
+      num_hidden_layers: 32
+      torch_dtype: bfloat16
+      hidden_act: silu
+  - name: mixtral_8x22b
+    repository: mistralai/Mixtral-8x22B-v0.1
+    revision: 76fa59362cd95eb633a4e419c24364c90674966c
+    published_total_parameters_approx: 141000000000
+    upstream_config:
+      model_type: mixtral
+      hidden_size: 6144
+      intermediate_size: 16384
+      num_local_experts: 8
+      num_experts_per_tok: 2
+      num_hidden_layers: 56
+      torch_dtype: bfloat16
+      hidden_act: silu

@@ -1,0 +1,35 @@
+# Synthetic functional fixture；不是已量化模型参数，也不是 FLAME 实测配置。
+model:
+  hidden_size: 16
+  expert_tile_intermediate_size: 16
+  num_experts: 6
+  tiles_per_expert: 2
+  router_top_k_config: 2
+quantization:
+  activation_bits: 8
+  weight_bits: 8
+  gu_requant_shift: 0
+  # (max_logit - selected_logit) >> shift 是 Q4 距离，指数为 exp(-distance/16)。
+  router_logit_shift: 0
+  output_gating_format: unsigned_q15
+hardware:
+  target_clock_hz: 200000000
+  physical_ddr_banks: 4
+  axi_bits_per_bank: 128
+  outstanding_bursts_per_bank: 1
+  stripe_bytes: 16
+  allocator_credit_classes: 1
+  interface_ceiling_bytes_per_cycle: 64
+  # 仅接口理想上限；没有声明达到此有效带宽。
+  interface_ceiling_bytes_per_second: 12800000000
+  max_burst_bytes: 256
+  ocm_banks: 2
+  slots_per_bank: 2
+  bytes_per_slot: 512
+transaction:
+  gu_base_addr: 65536
+  down_base_addr: 131072
+  expert_stride_bytes: 4096
+  physical_tile_bytes: 256
+  speculative_budget_bytes: 768
+  channel_credit_bytes: 768

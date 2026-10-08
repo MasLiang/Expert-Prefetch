@@ -1,0 +1,28 @@
+# THEORETICAL characterization mapping; never measured VEK280 latency.
+hardware_profile:
+  name: vek280_theoretical_dataflow
+  clock_hz: 1000000000
+  num_memory_channels: 3
+  bandwidth_bytes_per_sec_per_channel: 34133333333.333332
+  bandwidth_efficiency: 0.70
+  dma_setup_cycles: 200
+  max_inflight_per_channel: 1
+  burst_bytes: 4096
+  supports_channel_striping: true
+  total_aie_units: 38
+  ops_per_cycle_per_aie: 5315.789473684211
+  router_ops_per_cycle_per_aie: 4
+  aie_efficiency: 0.60
+  aie_task_startup_cycles: 50
+  ocm_bytes: 16777216
+  physical_aie_tiles: 304
+  physical_aie_tiles_per_compute_group: 8
+  hardware_tag: THEORETICAL_NOT_MEASURED
+execution:
+  aie_units_per_expert: 8
+  dma_mapping: round_robin_expert
+provenance:
+  official_resource_reference: AMD Versal AI Edge Product Selection Guide (VE2802 maximum resources)
+  bandwidth_reference: repository theoretical 102.4 GB/s aggregate assumption; not measured
+  usable_ocm_reference: assumed 16 MiB scheduler-managed tile buffer; not a device capacity claim
+  notes: 304 physical AIE-ML tiles represented as 38 logical groups; efficiencies and setup are assumed

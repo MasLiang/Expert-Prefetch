@@ -1,0 +1,70 @@
+{
+  "qualities": [
+    "perfect",
+    "high",
+    "medium",
+    "low",
+    "wrong"
+  ],
+  "opportunities": [
+    [
+      "very_low",
+      "source_expert_done",
+      500
+    ],
+    [
+      "low",
+      "source_expert_done",
+      20
+    ],
+    [
+      "medium",
+      "source_gate_up_done",
+      20
+    ],
+    [
+      "high",
+      "source_layer_start",
+      20
+    ]
+  ],
+  "ocm_capacity_ratios": [
+    0.75,
+    1.0,
+    1.5,
+    4.0
+  ],
+  "ocm_reference_method": "smallest demand-only capacity within 1% of 1 MiB capacity",
+  "memory_channels": [
+    1,
+    2,
+    3
+  ],
+  "fixed_budget_bytes": 131072,
+  "controlled_hardware": {
+    "hardware_evidence": "synthetic_placeholder",
+    "physical_aie_ml_tiles": "",
+    "logical_aie_groups": 16,
+    "physical_aie_tiles_per_compute_group": "",
+    "theoretical_memory_bandwidth_bytes_per_sec": 32000000000.0,
+    "effective_memory_bandwidth_bytes_per_sec": 25600000000.0,
+    "theoretical_compute_peak_ops_per_sec": 512000000000.0,
+    "theoretical_ridge_ops_per_byte": 16.0,
+    "mac_operation_convention": "configured operations; not a VEK280 claim"
+  },
+  "vek280_theoretical_hardware": {
+    "hardware_evidence": "theoretical_not_measured",
+    "physical_aie_ml_tiles": 304,
+    "logical_aie_groups": 304,
+    "physical_aie_tiles_per_compute_group": 1,
+    "theoretical_memory_bandwidth_bytes_per_sec": 102400000000.0,
+    "effective_memory_bandwidth_bytes_per_sec": 102400000000.0,
+    "theoretical_compute_peak_ops_per_sec": 202000000000000.0,
+    "theoretical_ridge_ops_per_byte": 1972.65625,
+    "mac_operation_convention": "1 MAC = 2 operations"
+  },
+  "hardware_modes": [
+    "controlled_synthetic_hardware",
+    "vek280_theoretical"
+  ]
+}

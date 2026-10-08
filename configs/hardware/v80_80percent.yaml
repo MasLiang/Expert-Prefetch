@@ -1,0 +1,19 @@
+# Official resource anchors; all execution mappings below are study assumptions.
+resource_study:
+  hbm_bandwidth_bytes_per_sec: 819000000000
+  dsp_engines: 10848
+  block_ram_megabits: 132
+  ultraram_megabits: 541
+  total_pl_memory_megabits: 752
+  resource_fraction: 0.8
+  memory_megabit_multiplier: 1000000
+  clocks_hz: [300000000, 500000000]
+  macs_per_dsp_per_cycle: 1
+  operations_per_mac: 2
+  compute_duty_factors: [0.25, 1.0]
+  abstract_dma_channels: 8
+  dma_setup_cycles: 80
+  compute_startup_cycles: 30
+  router_compute_groups: [1, 2]
+  resource_source: https://docs.amd.com/r/en-US/ds1013-v80/Adaptive-SoC-Resources
+  bandwidth_source: https://docs.amd.com/r/en-US/ug1617-alveo-v80/Product-Details

@@ -1,0 +1,68 @@
+# 结构估计，非 U200 实测；参数不从 RTL 观测总周期回归拟合。
+output_directory: results/m10_control_alignment
+strict_execution_rules: false
+fixture:
+  hidden_size: 16
+  intermediate_size: 32
+  num_experts: 6
+  top_k: 2
+  weight_bits: 8
+  activation_bits: 8
+  f_tile_size: 16
+  slot_bytes: 512
+  future_budget_bytes: 1536
+hardware:
+  name: rtl_control_structural_estimate
+  clock_hz: 200000000
+  num_memory_channels: 4
+  bandwidth_bytes_per_sec_per_channel: 3200000000
+  bandwidth_efficiency: 1.0
+  dma_setup_cycles: 0
+  max_inflight_per_channel: 1
+  burst_bytes: 256
+  supports_channel_striping: true
+  total_aie_units: 1
+  ops_per_cycle_per_aie: 32
+  aie_efficiency: 1.0
+  aie_task_startup_cycles: 8
+  hardware_tag: RTL_STRUCTURAL_ESTIMATE_NOT_BOARD_MEASUREMENT
+execution_rules:
+  ocm_slot_bytes: 512
+  ocm_banks: 2
+  reserved_demand_slots: 2
+  epoch_base: 1
+  atomic_tile_pair: true
+  compute_policy: tile_ready_first
+  retry_future_prefetch: true
+  request_order: pair_fifo
+  descriptor_entries: 8
+  reserved_demand_descriptors: 2
+  dma_fifo_depth: 4
+  # DMA/token retire 的状态更新与下拍 valid/free count 传播，事件级2拍估计。
+  descriptor_retirement_cycles: 2
+  burst_arbitration: true
+  # IDLE/lookup、claim、SETUP、AXI launch：事件级初值，不是协议逐拍模型。
+  dma_selection_cycles: 4
+  dma_burst_gap_cycles: 1
+  # Router 权重在 LAYER_START（输入事务接受）之前已由独立 load 接口装载。
+  router_load_cycles: 0
+  # E*K SCAN + K EXP + 34*(K-1) 除法 + 最后余数2拍 + BEGIN1拍 + K EMIT。
+  router_control_cycles: 53
+  # resolver 在 route_last 后 drain4、扫描每个 table entry、done1。
+  demand_dispatch_cycles: 5
+  route_scan_cycles_per_entry: 1
+  tile_dispatch_cycles: 4
+  nonlinear_handoff_cycles: 1
+  layer_combine_cycles: 4
+  # chain DRAIN/FLUSH/ADVANCE/READY 4 + host reload 7 + bench 负向探测4。
+  layer_retirement_cycles: 15
+cases:
+  - {name: no_prefetch_three, layers: 3, future_mode: 0, slots_per_bank: 2}
+  - {name: hit_three, layers: 3, future_mode: 1, slots_per_bank: 2}
+  - {name: wrong_three, layers: 3, future_mode: 2, slots_per_bank: 2}
+  - {name: hit_eight, layers: 8, future_mode: 1, slots_per_bank: 2}
+  - {name: hit_larger_ocm, layers: 3, future_mode: 1, slots_per_bank: 4}
+  - {name: credit_pressure, layers: 3, future_mode: 1, slots_per_bank: 4, descriptor_entries: 4, fifo_depth: 2}
+  - {name: predictor_delayed, layers: 3, future_mode: 1, slots_per_bank: 2, predictor_delay_cycles: 64}
+  - {name: predictor_late, layers: 3, future_mode: 1, slots_per_bank: 2, predictor_delay_cycles: 448}
+  - {name: ddr_gaps, layers: 3, future_mode: 1, slots_per_bank: 2, ddr_gaps: 1, bandwidth_efficiency: 0.5}

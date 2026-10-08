@@ -1,0 +1,10 @@
+# 小型合成机制实验；利用率由baseline运行结果测量，而非由rho代替。
+historical_directory: results/prefetch_dense
+base_config: configs/experiments/prefetch_phase.yaml
+seeds: [20261005, 20261006, 20261007]
+tile_groups: 4
+ocm_expert_equivalents: 4
+ratios: [0.2, 0.5, 0.75, 0.9, 1.0, 1.25, 1.5, 2.0, 3.0, 4.0, 8.0, 16.0]
+accuracies: [0.0, 0.25, 0.5, 0.75, 0.9, 1.0]
+minimum_robust_speedup: 1.01
+cost_tie_latency_fraction: 0.005

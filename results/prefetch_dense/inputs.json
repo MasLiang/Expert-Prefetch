@@ -1,0 +1,1112 @@
+{
+  "20261005": [
+    {
+      "sample": 0,
+      "truth": [
+        4,
+        11,
+        12,
+        11,
+        9
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            6,
+            4
+          ],
+          "quality_order": 11
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            4,
+            2
+          ],
+          "quality_order": 14
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            0,
+            13
+          ],
+          "quality_order": 1
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            3,
+            13
+          ],
+          "quality_order": 5
+        }
+      ]
+    },
+    {
+      "sample": 1,
+      "truth": [
+        5,
+        8,
+        9,
+        15,
+        7
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            0,
+            13
+          ],
+          "quality_order": 15
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            12,
+            2
+          ],
+          "quality_order": 6
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            8,
+            7
+          ],
+          "quality_order": 4
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            10,
+            2
+          ],
+          "quality_order": 3
+        }
+      ]
+    },
+    {
+      "sample": 2,
+      "truth": [
+        13,
+        10,
+        11,
+        7,
+        8
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            1,
+            9
+          ],
+          "quality_order": 19
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            0,
+            10
+          ],
+          "quality_order": 17
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            0,
+            6
+          ],
+          "quality_order": 9
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            1,
+            0
+          ],
+          "quality_order": 2
+        }
+      ]
+    },
+    {
+      "sample": 3,
+      "truth": [
+        13,
+        2,
+        5,
+        15,
+        2
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            3,
+            12
+          ],
+          "quality_order": 16
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            0,
+            13
+          ],
+          "quality_order": 12
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            12,
+            9
+          ],
+          "quality_order": 10
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            5,
+            6
+          ],
+          "quality_order": 8
+        }
+      ]
+    },
+    {
+      "sample": 4,
+      "truth": [
+        9,
+        8,
+        9,
+        5,
+        0
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            0,
+            13
+          ],
+          "quality_order": 7
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            4,
+            8
+          ],
+          "quality_order": 18
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            6,
+            0
+          ],
+          "quality_order": 0
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            5,
+            3
+          ],
+          "quality_order": 13
+        }
+      ]
+    }
+  ],
+  "20261006": [
+    {
+      "sample": 0,
+      "truth": [
+        14,
+        13,
+        11,
+        6,
+        0
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            1,
+            2
+          ],
+          "quality_order": 7
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            7,
+            2
+          ],
+          "quality_order": 4
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            3,
+            2
+          ],
+          "quality_order": 18
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            3,
+            12
+          ],
+          "quality_order": 12
+        }
+      ]
+    },
+    {
+      "sample": 1,
+      "truth": [
+        14,
+        1,
+        0,
+        3,
+        13
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            2,
+            3
+          ],
+          "quality_order": 1
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            5,
+            2
+          ],
+          "quality_order": 3
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            7,
+            8
+          ],
+          "quality_order": 15
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            3,
+            2
+          ],
+          "quality_order": 6
+        }
+      ]
+    },
+    {
+      "sample": 2,
+      "truth": [
+        11,
+        7,
+        1,
+        15,
+        0
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            11,
+            15
+          ],
+          "quality_order": 13
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            4,
+            11
+          ],
+          "quality_order": 17
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            3,
+            13
+          ],
+          "quality_order": 10
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            2,
+            15
+          ],
+          "quality_order": 9
+        }
+      ]
+    },
+    {
+      "sample": 3,
+      "truth": [
+        1,
+        13,
+        15,
+        5,
+        1
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            6,
+            11
+          ],
+          "quality_order": 14
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            12,
+            9
+          ],
+          "quality_order": 11
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            13,
+            6
+          ],
+          "quality_order": 2
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            11,
+            2
+          ],
+          "quality_order": 19
+        }
+      ]
+    },
+    {
+      "sample": 4,
+      "truth": [
+        10,
+        1,
+        9,
+        9,
+        15
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            3,
+            10
+          ],
+          "quality_order": 8
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            7,
+            2
+          ],
+          "quality_order": 16
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            8,
+            0
+          ],
+          "quality_order": 0
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            2,
+            1
+          ],
+          "quality_order": 5
+        }
+      ]
+    }
+  ],
+  "20261007": [
+    {
+      "sample": 0,
+      "truth": [
+        5,
+        3,
+        10,
+        6,
+        11
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            10,
+            8
+          ],
+          "quality_order": 6
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            15,
+            3
+          ],
+          "quality_order": 9
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            0,
+            10
+          ],
+          "quality_order": 17
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            5,
+            4
+          ],
+          "quality_order": 15
+        }
+      ]
+    },
+    {
+      "sample": 1,
+      "truth": [
+        1,
+        6,
+        1,
+        1,
+        2
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            0,
+            15
+          ],
+          "quality_order": 14
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            0,
+            9
+          ],
+          "quality_order": 5
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            15,
+            0
+          ],
+          "quality_order": 3
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            8,
+            1
+          ],
+          "quality_order": 19
+        }
+      ]
+    },
+    {
+      "sample": 2,
+      "truth": [
+        9,
+        1,
+        10,
+        1,
+        1
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            12,
+            8
+          ],
+          "quality_order": 11
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            3,
+            8
+          ],
+          "quality_order": 16
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            15,
+            7
+          ],
+          "quality_order": 4
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            9,
+            12
+          ],
+          "quality_order": 18
+        }
+      ]
+    },
+    {
+      "sample": 3,
+      "truth": [
+        12,
+        4,
+        7,
+        12,
+        4
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            1,
+            9
+          ],
+          "quality_order": 2
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            9,
+            11
+          ],
+          "quality_order": 13
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            5,
+            0
+          ],
+          "quality_order": 0
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            8,
+            5
+          ],
+          "quality_order": 1
+        }
+      ]
+    },
+    {
+      "sample": 4,
+      "truth": [
+        11,
+        14,
+        1,
+        13,
+        11
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            5,
+            11
+          ],
+          "quality_order": 8
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            15,
+            14
+          ],
+          "quality_order": 12
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            3,
+            7
+          ],
+          "quality_order": 10
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            7,
+            3
+          ],
+          "quality_order": 7
+        }
+      ]
+    }
+  ],
+  "20261008": [
+    {
+      "sample": 0,
+      "truth": [
+        7,
+        7,
+        9,
+        14,
+        1
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            3,
+            1
+          ],
+          "quality_order": 3
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            8,
+            14
+          ],
+          "quality_order": 18
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            13,
+            4
+          ],
+          "quality_order": 1
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            11,
+            7
+          ],
+          "quality_order": 11
+        }
+      ]
+    },
+    {
+      "sample": 1,
+      "truth": [
+        15,
+        14,
+        14,
+        1,
+        0
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            12,
+            5
+          ],
+          "quality_order": 15
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            1,
+            12
+          ],
+          "quality_order": 5
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            8,
+            2
+          ],
+          "quality_order": 8
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            6,
+            13
+          ],
+          "quality_order": 16
+        }
+      ]
+    },
+    {
+      "sample": 2,
+      "truth": [
+        2,
+        10,
+        4,
+        11,
+        1
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            1,
+            12
+          ],
+          "quality_order": 0
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            1,
+            11
+          ],
+          "quality_order": 19
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            13,
+            4
+          ],
+          "quality_order": 6
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            4,
+            5
+          ],
+          "quality_order": 12
+        }
+      ]
+    },
+    {
+      "sample": 3,
+      "truth": [
+        5,
+        2,
+        8,
+        0,
+        6
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            13,
+            1
+          ],
+          "quality_order": 9
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            0,
+            9
+          ],
+          "quality_order": 7
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            7,
+            13
+          ],
+          "quality_order": 17
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            0,
+            1
+          ],
+          "quality_order": 14
+        }
+      ]
+    },
+    {
+      "sample": 4,
+      "truth": [
+        2,
+        13,
+        3,
+        1,
+        13
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            2,
+            11
+          ],
+          "quality_order": 2
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            2,
+            12
+          ],
+          "quality_order": 10
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            6,
+            7
+          ],
+          "quality_order": 13
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            10,
+            12
+          ],
+          "quality_order": 4
+        }
+      ]
+    }
+  ],
+  "20261009": [
+    {
+      "sample": 0,
+      "truth": [
+        12,
+        12,
+        15,
+        1,
+        14
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            6,
+            3
+          ],
+          "quality_order": 0
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            7,
+            6
+          ],
+          "quality_order": 8
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            4,
+            10
+          ],
+          "quality_order": 15
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            8,
+            13
+          ],
+          "quality_order": 14
+        }
+      ]
+    },
+    {
+      "sample": 1,
+      "truth": [
+        8,
+        10,
+        14,
+        11,
+        10
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            3,
+            7
+          ],
+          "quality_order": 17
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            6,
+            13
+          ],
+          "quality_order": 6
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            1,
+            12
+          ],
+          "quality_order": 19
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            3,
+            7
+          ],
+          "quality_order": 10
+        }
+      ]
+    },
+    {
+      "sample": 2,
+      "truth": [
+        11,
+        13,
+        12,
+        3,
+        13
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            1,
+            15
+          ],
+          "quality_order": 11
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            6,
+            9
+          ],
+          "quality_order": 1
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            0,
+            7
+          ],
+          "quality_order": 16
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            6,
+            8
+          ],
+          "quality_order": 2
+        }
+      ]
+    },
+    {
+      "sample": 3,
+      "truth": [
+        6,
+        0,
+        11,
+        11,
+        2
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            5,
+            12
+          ],
+          "quality_order": 7
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            10,
+            14
+          ],
+          "quality_order": 12
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            2,
+            5
+          ],
+          "quality_order": 18
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            9,
+            13
+          ],
+          "quality_order": 4
+        }
+      ]
+    },
+    {
+      "sample": 4,
+      "truth": [
+        0,
+        0,
+        12,
+        10,
+        3
+      ],
+      "targets": [
+        {
+          "target": 1,
+          "wrong_ids": [
+            4,
+            5
+          ],
+          "quality_order": 13
+        },
+        {
+          "target": 2,
+          "wrong_ids": [
+            13,
+            9
+          ],
+          "quality_order": 3
+        },
+        {
+          "target": 3,
+          "wrong_ids": [
+            8,
+            1
+          ],
+          "quality_order": 9
+        },
+        {
+          "target": 4,
+          "wrong_ids": [
+            1,
+            11
+          ],
+          "quality_order": 5
+        }
+      ]
+    }
+  ]
+}

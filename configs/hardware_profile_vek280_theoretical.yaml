@@ -1,0 +1,21 @@
+# THEORETICAL INPUT: not measured VEK280 performance.
+# 304 physical AIE-ML tiles are represented as 38 logical groups of eight
+# tiles.  38 x 5315.789... ops/cycle x 1 GHz = 202 TOPS theoretical INT8 peak.
+hardware_profile:
+  name: vek280_theoretical
+  clock_hz: 1000000000
+  num_memory_channels: 3
+  bandwidth_bytes_per_sec_per_channel: 34133333333.333332
+  bandwidth_efficiency: 0.70
+  dma_setup_cycles: 200
+  max_inflight_per_channel: 1
+  burst_bytes: 4096
+  supports_channel_striping: true
+  total_aie_units: 38
+  ops_per_cycle_per_aie: 5315.789473684211
+  aie_efficiency: 0.60
+  aie_task_startup_cycles: 50
+  ocm_bytes: 536870912
+  physical_aie_tiles: 304
+  physical_aie_tiles_per_compute_group: 8
+  hardware_tag: theoretical_not_measured

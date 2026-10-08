@@ -1,0 +1,32 @@
+# 初次对齐的解析服务时间假设；不使用 layer 结果拟合，不是上板测量。
+alignment:
+  clock_hz: 200000000
+  hidden_size: 16
+  intermediate_size: 32
+  num_experts: 6
+  top_k: 2
+  f_tile_size: 16
+  ocm_slots: 4
+  ocm_slot_bytes: 512
+  reserved_demand_slots: 2
+  descriptor_entries: 8
+  reserved_demand_descriptors: 2
+  dma_fifo_depth: 4
+  physical_memory_channels: 4
+  max_burst_bytes: 256
+  ops_per_cycle: 4
+  mac_startup_cycles: 1
+  router_start_cycle: 1
+  # K*E 扫描 + K exponent + 34*(K-1) divider + last residual/输出/parser。
+  router_control_cycles: 54
+  nonlinear_elements_per_cycle: 1
+  tile_dispatch_cycles: 8
+  combine_cycles: 3
+  dma_setup_cycles_per_burst: 6
+  # TB 每 bank R valid 的产生与接受分拍，无 gaps 时每 2 cycle 一个 beat。
+  no_gaps_bytes_per_cycle_per_bank: 8
+  # 初始粗粒度估计；真实 TB bank-specific modulo gaps 导致相位相关停顿。
+  gaps_bytes_per_cycle_per_bank: 6
+  total_cycle_relative_tolerance: 0.10
+  weight_wait_absolute_tolerance_cycles: 4
+  speedup_absolute_tolerance: 0.005

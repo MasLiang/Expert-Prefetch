@@ -1,0 +1,40 @@
+confidence,notes,parameter,simulator_location,source_reference,source_type,unit,value
+medium,Cycle-to-second conversion assumption; not measured.,controlled clock,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,Hz,1000000000
+high,"Abstract independent channels, not a board wiring claim.",controlled memory channels,examples/m71_unified_characterization.py:machine,M7.1/M7.2 controlled sweeps,SYNTHETIC_WORKLOAD_PARAMETER,channels,"1, 2, or 3; M7.3 reference=2"
+low,Synthetic peak input; no board measurement.,peak bandwidth per channel,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,GB/s/channel,16
+low,"Constant efficiency, independent of request mix.",bandwidth efficiency,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,ratio,0.8
+high,Arithmetic consequence of assumed inputs.,effective bandwidth per channel,HardwareProfile.effective_bytes_per_cycle_per_channel,16 GB/s * 0.8 / 1 GHz,DERIVED,bytes/cycle/channel,12.8
+low,Unmeasured theoretical input; not hardware validation.,VEK theoretical aggregate bandwidth,examples/m71_unified_characterization.py:machine,M7.1 vek280_theoretical study input,ASSUMED,GB/s,102.4
+low,"Coalescing ceiling, not a verified AXI burst limit.",DMA burst/coalescing ceiling,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,bytes,4096
+high,"H=64, F_tile=32, INT8.",Gate-Up tile transfer granularity,work_model + f_tile_size,2*H*F_tile*weight_bits/8,DERIVED,bytes,4096
+high,"H=64, F_tile=32, INT8.",Down tile transfer granularity,work_model + f_tile_size,H*F_tile*weight_bits/8,DERIVED,bytes,2048
+low,Fixed request cost; not calibrated.,DMA setup latency,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,cycles/request,40
+medium,Current implementation explicitly enforces one.,maximum inflight per channel,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,request/channel,1
+high,"Deterministic model behavior, not measured controller arbitration.",DMA arbitration,hardware/multi_channel_memory.py,simulator policy,ASSUMED,priority order,demand/commit > background > speculative
+high,Deterministic research policy.,speculative queue ordering,hardware/multi_channel_memory.py,simulator policy,ASSUMED,lexicographic,"score desc, rank, layer, expert, matrix, tile, request"
+high,Started transfers cannot be canceled or preempted.,active DMA preemption,hardware/multi_channel_memory.py,simulator policy,ASSUMED,boolean,False
+medium,Expert ID modulo channel count; no address-map validation.,memory placement,examples/m71_unified_characterization.py:machine,M7.2 representative configuration,ASSUMED,policy,round_robin_expert
+high,Single-channel requests do not automatically stripe.,channel scaling,HardwareProfile,channels * per-channel bandwidth,DERIVED,model,linear aggregate ceiling
+high,1.5x the 32 KiB demand reference; not board capacity.,reference OCM capacity,examples/m71_unified_characterization.py:machine,M7.2b representative point,SYNTHETIC_WORKLOAD_PARAMETER,bytes,49152
+medium,"Empirical simulator normalization, not physical OCM size.",demand working-set reference,examples/m72b_opportunity_refinement.py,M7.2a smallest capacity within 1% of large-OCM demand latency,DERIVED,bytes,32768
+high,"No banks, ports, fragmentation, or access latency.",OCM organization,hardware/capacity_ocm.py,simulator abstraction,ASSUMED,abstraction,byte-capacity object store
+high,Demand tile larger than total capacity raises an error.,OCM admission,hardware/capacity_ocm.py,simulator policy,ASSUMED,policy,demand guaranteed per tile; speculation may reject
+high,Running allocations protected.,OCM eviction,hardware/capacity_ocm.py,simulator policy,ASSUMED,policy,non-running speculative; false/low-priority first
+high,Peak allocation is distinct from bytes physically transferred.,OCM residency accounting,hardware/capacity_ocm.py,allocation interval accounting,DERIVED,model,allocation-to-release byte-cycles
+low,"Abstract capacity units, not physical tile mapping.",controlled logical AIE units,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,logical units,16
+low,Synthetic effective-rate input before efficiency.,AIE raw rate,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,ops/cycle/logical unit,32
+low,Constant across Router/Gate-Up/Down.,AIE efficiency,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,ratio,0.75
+high,Arithmetic consequence of assumed inputs.,effective AIE rate,HardwareProfile.compute_rate_per_cycle,32 * 0.75,DERIVED,ops/cycle/logical unit,24
+high,Fixed allocation; no mapper calibration.,AIE units per Expert,AdvancedExecutionConfig,M7.2 representative configuration,SYNTHETIC_WORKLOAD_PARAMETER,logical units/task,4
+low,Paid per Router/tile reservation; not measured.,AIE task startup,examples/m71_unified_characterization.py:machine,M7.1 controlled profile,ASSUMED,cycles/tile task,20
+high,Enforces capacity overlap but omits placement/routing constraints.,AIE availability,hardware/aie_pool.py,simulator abstraction,ASSUMED,model,cumulative 16-unit pool
+high,Operation count is formula-derived; rate/startup are assumed.,compute duration,hardware/aie_pool.py,analytical performance model,DERIVED,cycles,ceil(ops/(units*effective_rate))+startup
+high,Eight F tiles per Expert for F=256.,F tile size,AdvancedExecutionConfig,M7.2 controlled workload,SYNTHETIC_WORKLOAD_PARAMETER,elements,32
+low,Independent single nonlinear resource; uncalibrated.,nonlinear throughput,AdvancedExecutionConfig,default advanced configuration,ASSUMED,elements/cycle,1024
+low,Uncalibrated.,nonlinear startup,AdvancedExecutionConfig,default advanced configuration,ASSUMED,cycles/task,0
+high,Causal dependencies enforced; NoC contention omitted.,compute/DMA overlap,unified_sequence_simulator.py,event model,ASSUMED,dependency model,independent shared resources
+low,Unmeasured study mapping; repository helper/config variants differ.,VEK theoretical AIE count,examples/m71_unified_characterization.py:machine,M7.1 vek280_theoretical study input,ASSUMED,physical/logical units,304
+low,MAC=2-op theoretical input; not achieved throughput.,VEK theoretical compute,examples/m71_unified_characterization.py:machine,M7.1 vek280_theoretical study input,ASSUMED,TOPS,202
+high,"Small characterization workload, not a production model.",model H/F/E/K,examples/m71_unified_characterization.py:machine,M7.2 controlled workload,SYNTHETIC_WORKLOAD_PARAMETER,elements/experts,64/256/32/4
+high,Decode-like synthetic sequence.,batch size and layer count,examples/m71_unified_characterization.py:machine,M7.2 controlled workload,SYNTHETIC_WORKLOAD_PARAMETER,tokens/layers,1 and 3
+high,Produces 2.316 Expert-equivalent opportunity at 1x.,predictor latency,M7.3 representative,M7.2b medium-opportunity point,SYNTHETIC_WORKLOAD_PARAMETER,cycles,4767

@@ -1,0 +1,29 @@
+# ORACLE-INFORMED SYNTHETIC PLACEHOLDER for sensitivity analysis only.
+# This is not a deployable predictor and is not measured VEK280 performance.
+synthetic_predictor:
+  enabled: true
+  mapping: next_moe_layer
+  source_point: source_router_done
+  predictor_latency_cycles: 20
+  generation_mode: independent_recall
+  candidate_count: 4
+  target_recall: 0.75
+  hit_distribution:
+    0: 0.10
+    1: 0.40
+    2: 0.50
+  true_expert_selection: random
+  false_expert_selection: uniform
+  ranking_mode: noisy_score
+  score_model:
+    true_mean: 0.80
+    true_std: 0.10
+    false_mean: 0.30
+    false_std: 0.10
+    min_score: 0.0
+    max_score: 1.0
+  seed: 1234
+  prefetch:
+    policy: fixed_depth
+    gate_up_tiles_per_candidate: 1
+    down_tiles_per_candidate: 0

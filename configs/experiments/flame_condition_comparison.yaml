@@ -1,0 +1,23 @@
+# FLAME条件启发对照，不是FLAME实现/板级性能复现；无剪枝。
+models: [configs/models/switch_base_8.yaml, configs/models/switch_base_16.yaml]
+common_config: configs/experiments/mac_four_cases.yaml
+base_config: configs/experiments/switch_prefetch.yaml
+samples: 50
+coverage: 0.844
+candidate_count: 2
+candidate_multiplier: 2
+prefix_depth: 2
+ops_per_cycle_per_group: 32
+f_tile_size: 128
+burst_bytes: 4096
+mac_groups: [1, 4, 16]
+bytes_per_cycle_per_channel: [4, 8, 16, 32]
+ocm_bytes: 16777216
+seeds: [20261005, 20261006, 20261007]
+# 主扫描seed固定，参考点再跑另外两个seed；不是所有点都三seed。
+reference_mac_groups: 4
+reference_bytes_per_cycle_per_channel: 16
+capacity_probe_model: switch_base_8_decoder
+capacity_probe_bytes: 9437184
+# 主预测case明确取消上一层权重完成屏障，barrier=True只用于消融。
+primary_wait_for_previous_layer_weights: false

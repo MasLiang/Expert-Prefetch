@@ -1,0 +1,8 @@
+# 带宽单因素扫描：不是 U280/V80 实测或完整 HBM 通道实现。
+reference_root: results/current_model_retest_20261007
+switch_config: configs/experiments/switch_wide_tile_prefetch.yaml
+moe_config: configs/experiments/olmoe_mixtral_cases.yaml
+samples_per_model: 20
+ocm_bytes: 16777216
+bytes_per_cycle_per_channel: [4, 8, 16, 32, 64, 128, 256, 512, 1024]
+# 算力、DMA 通道数、启动、burst、allocator、预测时序全部沿用原 profile。

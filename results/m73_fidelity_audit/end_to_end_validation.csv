@@ -1,0 +1,2 @@
+absolute_error_cycles,hardware_measurement_cycles,hardware_platform,notes,relative_error_percent,simulator_cycles,source_reference,validation_status,validation_target
+,,none,No direct hardware validation available.,,27642,repository-wide search: no measured board result found,NOT_AVAILABLE,representative 3-layer sequence latency

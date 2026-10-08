@@ -1,0 +1,22 @@
+# 四case共同硬件假设，不与上一轮finite-slot结果直接拼接。
+geometry_config: configs/experiments/rtl_rules_pe_sweep.yaml
+inputs_directory: results/rtl_rules_pe_sweep
+wait_for_previous_layer_weights: false
+# 各case相同byte OCM/unlimited request credits，compute expert_locked。
+# 从geometry_config读取全部几何、MAC、BW和seed；下列规则四case共同使用。
+execution_rules:
+  burst_arbitration: true
+  dma_selection_cycles: 4
+  dma_burst_gap_cycles: 1
+  dma_request_latency_cycles: 3
+  dma_request_interval_cycles: 1
+  dma_payload_cycle_multiplier: 2
+  dma_return_cycles: 2
+  router_truth_emit_cycles: 1
+  demand_dispatch_cycles: 5
+  tile_dispatch_cycles: 4
+  nonlinear_handoff_cycles: 1
+  expert_combine_cycles: 2
+  layer_combine_cycles: 4
+  layer_retirement_cycles: 15
+  ocm_payload_visibility_cycles: 1

@@ -1,0 +1,41 @@
+# RTL 小型验证夹具，不是 U200 板级实测性能。
+fixture:
+  hidden_size: 16
+  intermediate_size: 32
+  num_experts: 6
+  top_k: 2
+  weight_bits: 8
+  activation_bits: 8
+  f_tile_size: 16
+  slot_bytes: 512
+  future_budget_bytes: 1536
+hardware:
+  name: u200_rtl_structural_estimate
+  clock_hz: 200000000
+  num_memory_channels: 4
+  bandwidth_bytes_per_sec_per_channel: 3200000000
+  bandwidth_efficiency: 1.0
+  dma_setup_cycles: 0
+  max_inflight_per_channel: 1
+  burst_bytes: 256
+  supports_channel_striping: true
+  total_aie_units: 1
+  ops_per_cycle_per_aie: 32
+  aie_efficiency: 1.0
+  aie_task_startup_cycles: 8
+  hardware_tag: RTL_STRUCTURAL_ESTIMATE_NOT_BOARD_MEASUREMENT
+execution_rules:
+  ocm_slot_bytes: 512
+  ocm_banks: 2
+  reserved_demand_slots: 2
+  epoch_base: 1
+  atomic_tile_pair: true
+  compute_policy: tile_ready_first
+  retry_future_prefetch: true
+  request_order: pair_fifo
+cases:
+  - {name: no_prefetch_three, layers: 3, future_mode: 0, slots_per_bank: 2}
+  - {name: hit_three, layers: 3, future_mode: 1, slots_per_bank: 2}
+  - {name: wrong_three, layers: 3, future_mode: 2, slots_per_bank: 2}
+  - {name: hit_eight, layers: 8, future_mode: 1, slots_per_bank: 2}
+  - {name: hit_larger_ocm, layers: 3, future_mode: 1, slots_per_bank: 4}

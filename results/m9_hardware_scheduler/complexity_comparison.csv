@@ -1,0 +1,8 @@
+additions,comparisons,divisions,estimated_control_cycles,hardware_friendly,multiplications,notes,scheduler,state_entries
+0,0,0,1,True,0,no speculative allocation,no_prefetch,1
+16,16,0,32,True,0,rank scan plus capacity accumulator,full_expert,16
+256,256,0,32,True,0,nested rank/depth counters,uniform_tile,16
+256,240,256,128,False,256,software floating-point heuristic retained as M8 reference,ranked_tile,32
+48,32,16,176,True,16,integer confidence accumulator and fixed-latency divider/reciprocal,budget_proportional,48
+32,240,0,112,True,480,fixed-point score; ratio compared by cross multiplication; channel-load counters,hardware_greedy,32
+exhaustive,exhaustive,offline,offline,False,exhaustive,analysis upper bound only,oracle,offline

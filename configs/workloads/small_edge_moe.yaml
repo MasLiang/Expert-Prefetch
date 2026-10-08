@@ -1,0 +1,21 @@
+workload:
+  name: small_edge_moe
+  description: Small edge-oriented MoE characterization workload
+  provenance: representative synthetic derived from MoE scaling
+  model:
+    hidden_size: 512
+    intermediate_size: 1024
+    num_experts: 64
+    top_k: 2
+    weight_bits: 8
+    activation_bits: 8
+    num_moe_layers: 8
+  tile:
+    f_tile_size: 64
+  routing:
+    candidate_count: 16
+    true_ranks_by_quality:
+      perfect: [1, 2]
+      high: [1, 4]
+      medium: [3, 8]
+      low: [8, 16]

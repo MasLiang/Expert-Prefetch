@@ -1,0 +1,57 @@
+{
+  "formal_configurations": 432,
+  "hardware_greedy_oracle_gap_percent_by_workload": {
+    "large_moe": 20.979443496000183,
+    "medium_moe": 20.461702094146666,
+    "small_edge_moe": 24.106793418643566
+  },
+  "mean_speedup_vs_full_expert": {
+    "budget_proportional": 1.0294326862143721,
+    "hardware_greedy": 1.0268108972515826,
+    "ranked_tile": 1.0269607862319907,
+    "uniform_tile": 1.027837728744566
+  },
+  "mean_speedup_vs_no_prefetch": {
+    "budget_proportional": 1.0491924242861812,
+    "full_expert": 1.0247479845010825,
+    "hardware_greedy": 1.0456956585189172,
+    "no_prefetch": 1.0,
+    "oracle": 1.2750149757090004,
+    "ranked_tile": 1.0458207500609245,
+    "uniform_tile": 1.0466468934565034
+  },
+  "not_claimed": [
+    "real FPGA latency",
+    "real VEK280 performance",
+    "real V80 performance"
+  ],
+  "online_winner_membership_including_ties": {
+    "budget_proportional": 371,
+    "full_expert": 156,
+    "hardware_greedy": 328,
+    "no_prefetch": 132,
+    "ranked_tile": 331,
+    "uniform_tile": 342
+  },
+  "oracle_candidate_simulations": 21526,
+  "plots": [
+    "fig01_speedup_vs_ocm.png",
+    "fig01_speedup_vs_ocm.pdf",
+    "fig02_speedup_vs_experts.png",
+    "fig02_speedup_vs_experts.pdf",
+    "fig03_scheduler_by_workload.png",
+    "fig03_scheduler_by_workload.pdf",
+    "fig04_oracle_gap_vs_workload.png",
+    "fig04_oracle_gap_vs_workload.pdf",
+    "fig05_hardware_comparison.png",
+    "fig05_hardware_comparison.pdf",
+    "fig06_useful_byte_fraction.png",
+    "fig06_useful_byte_fraction.pdf"
+  ],
+  "reported_scheduler_rows": 3024,
+  "supported_claims": [
+    "relative scheduler comparison",
+    "scaling trends",
+    "resource tradeoffs"
+  ]
+}

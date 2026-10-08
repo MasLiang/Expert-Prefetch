@@ -1,0 +1,4 @@
+tile:
+  tile_size_bytes: 4096
+  min_tiles_per_matrix: 1
+

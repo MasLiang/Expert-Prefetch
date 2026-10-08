@@ -1,0 +1,26 @@
+# SYNTHETIC PLACEHOLDER ONLY. These values are not measured or claimed VEK280 values.
+hardware:
+  clock_hz: 1000000000
+  aie:
+    router_ops_per_cycle: 64
+    gate_up_ops_per_cycle: 256
+    down_ops_per_cycle: 256
+    startup_cycles: 10
+    matrix_startup_cycles: 10
+    tile_pipeline_cycles: 0
+    operation_switch_cycles: 5
+    first_operation_pays_switch_cycles: false
+  dma:
+    bytes_per_cycle: 32
+    startup_cycles: 20
+    max_inflight: 1
+    preemptive: false
+  nonlinear:
+    elements_per_cycle: 32
+    startup_cycles: 4
+  pl_control:
+    topk_cycles: 5
+    dispatch_cycles: 5
+    commit_cycles: 2
+    cancel_cycles: 2
+    combine_cycles: 10

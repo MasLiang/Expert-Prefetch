@@ -1,0 +1,6 @@
+prefetch:
+  scope: gate_up_only
+  max_candidates: 4
+  policy: fixed_depth
+  gate_up_tiles_per_candidate: 2
+  down_tiles_per_candidate: 0
